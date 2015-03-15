@@ -55,5 +55,13 @@ public class NCPelicula {
         this.enCartelera = enCartelera;
     }
     
+    public void mostrar(){
+        System.out.println("Pelicula: "+titulo);
+        System.out.println("Director: "+director+" Ano: "+ano);
+        if(enCartelera==true)
+            System.out.println("SI se encuentra en cartelera");
+        else
+            System.out.println("NO se encuentra en cartelera");
+    }
     
 }

@@ -103,27 +103,53 @@ public class arbolPaises {
         
         if(aux!=null){
             CompararPos(aux.getIzq(), num);
-            if(num!=aux.getPosicion()){
+            if(num==aux.getPosicion()){
                 existe=true;
+              //  System.out.println("Numero repetido");
             }
             CompararPos(aux.getDer(), num); 
         }
     }
     
-    public void NuevoPais() throws Exception{
-        existe=false;
+    public void CompararNom(NodoPais aux, String nombre){
+        if(aux!=null){
+            CompararNom(aux.getIzq(), nombre);
+            if(aux.getNombrePais().toUpperCase().equals(nombre.toUpperCase())){
+                existe=true;
+                System.out.println("-Pais ya existente, intentelo de nuevo-");
+            }
+            CompararNom(aux.getDer(), nombre); 
+        }
+    }
+    
+    
+    public void NuevoPais(){
+        
         NodoPais aux = new NodoPais();
         NodoPais ra = raiz;
-        System.out.println("Indique el numero del pais: ");
+       // System.out.println("Indique el numero del pais: ");
         if(raiz==null)
             aux.setPosicion(100);
         else{
             int num;
-            num=sc.nextInt();             
+            do{
+                existe=false;
+                num=rdm.nextInt(200);
+                CompararPos(ra, num);             
+            }while(existe!=false);
+            
             aux.setPosicion(num);
         }
+        
         System.out.println("Indique el nombre del pais");
-        aux.setNombrePais(sc.next());
+        String nom;
+        do{
+          existe=false;
+          nom=sc.next();
+          CompararNom(ra, nom);
+        }while(existe!=false);
+        
+        aux.setNombrePais(nom.toUpperCase());
         Insertar(ra , aux);
     }
     

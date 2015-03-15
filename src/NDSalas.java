@@ -10,10 +10,38 @@
  */
 public class NDSalas {
     private NDSalas prox;
+    private NDSalas anterior;
     private String formato;
     private int capacidad;
     private PilaAsientos asientos;
+    private String numSala;
+    private NCPelicula pelicula;
 
+    public NCPelicula getPelicula() {
+        return pelicula;
+    }
+
+    public void setPelicula(NCPelicula pelicula) {
+        this.pelicula = pelicula;
+    }
+
+    
+    public NDSalas getAnterior() {
+        return anterior;
+    }
+
+    public void setAnterior(NDSalas anterior) {
+        this.anterior = anterior;
+    }
+
+    public String getNumSala() {
+        return numSala;
+    }
+
+    public void setNumSala(String numSala) {
+        this.numSala = numSala;
+    }
+    
     public NDSalas getProx() {
         return prox;
     }
@@ -52,6 +80,10 @@ public class NDSalas {
             NPAsientos aux = new NPAsientos(i,false);
             asientos.push(aux);
         }       
+    }
+    
+    public void mostrar(){
+        System.out.println("La sala: "+numSala+" tiene un formto: "+formato+" y una capacidad de: "+capacidad);
     }
     
     

@@ -1,6 +1,13 @@
+import java.util.*;
 
 public class LSucursales {
+    Scanner sc = new Scanner(System.in);
+   
     private NSucursales cabeza;
+    
+    public NSucursales getCabeza(){
+        return cabeza;
+    }
     
     public void mostrar(){
         NSucursales aux = cabeza;
@@ -10,7 +17,7 @@ public class LSucursales {
         }
     }
     
-    public void InsertaFinal(NSucursales nuevo){
+    public void InsertaSucursal(NSucursales nuevo){
         NSucursales aux = cabeza;
         while(aux.getProximo()!= null){
             aux=aux.getProximo();
@@ -33,10 +40,13 @@ public class LSucursales {
         }
     }
     
-    public void modificar(NSucursales mod){
-       mod.setProximo(mod);
-       
-       
+    public void ModificarSucur(){
+        NSucursales aux=cabeza;
+        String nombre=sc.next().toUpperCase();
+        
+        while(!aux.getNombre().equals(nombre)){
+            
+        }
     }
     
     
