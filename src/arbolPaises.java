@@ -170,7 +170,7 @@ public class arbolPaises {
         System.out.println("Indique el numero del pais: ");
         if()
         BuscarPais(ra,sc.nextInt());
-        
+        me gusta
     }
     
 }
