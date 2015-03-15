@@ -42,9 +42,11 @@ public class LSucursales {
     
     public void ModificarSucur(){
         NSucursales aux=cabeza;
-        String nombre=sc.next().toUpper();
+        String nombre=sc.next().toUpperCase();
         
-        while(aux.getNombre())
+        while(!aux.getNombre().equals(nombre)){
+            
+        }
     }
     
     
