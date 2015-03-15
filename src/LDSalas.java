@@ -54,4 +54,8 @@ public class LDSalas {
 
     }
     
+    public void modificar()
+    {
+        
+    }
 }
