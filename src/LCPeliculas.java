@@ -39,6 +39,9 @@ public class LCPeliculas {
         }
     }
     
+    public void modificar(){
+        
+    }
     
     
 }

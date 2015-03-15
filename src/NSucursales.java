@@ -51,11 +51,6 @@ public class NSucursales {
     public void setSalas(LDSalas salas) {
         this.salas = salas;
     }
-
-    public void modificarSucursal(String nombre, String direccion) {
-        this.nombre = nombre;
-        this.direccion = direccion;
-    }
     
     
     public void mostrar(){
@@ -91,8 +86,7 @@ public class NSucursales {
               break;
           case 4:
               salas.modificar();
-              
-          
+              break;
       }
        
        

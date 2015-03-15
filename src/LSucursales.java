@@ -45,8 +45,9 @@ public class LSucursales {
         String nombre=sc.next().toUpperCase();
         
         while(!aux.getNombre().equals(nombre)){
-            
+            aux=aux.getProximo();
         }
+        aux.modificar();
     }
     
     

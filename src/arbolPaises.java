@@ -5,6 +5,7 @@ public class arbolPaises {
     Scanner sc = new Scanner(System.in);
     Random rdm = new Random();
     boolean existe=false;
+    private NodoPais encontrado; 
     
     private NodoPais raiz = new NodoPais();
     
@@ -153,5 +154,23 @@ public class arbolPaises {
         Insertar(ra , aux);
     }
     
+    
+    public void BuscarPais(NodoPais aux, int num){
+        
+        if(aux!=null){
+            BuscarPais(aux.getIzq(), num);
+            if(aux.getPosicion()==num)
+                encontrado=aux;
+            BuscarPais(aux.getDer(), num);
+        }
+    }
+    
+    public void ElPais(){
+        NodoPais ra = raiz;
+        System.out.println("Indique el numero del pais: ");
+        if()
+        BuscarPais(ra,sc.nextInt());
+        
+    }
     
 }

@@ -92,4 +92,8 @@ public class NodoPais {
         sucursales.InsertaSucursal(nuevo);
     }
     
+    public void modificarSucursales(){
+        sucursales.ModificarSucur();
+    }
+    
 }
