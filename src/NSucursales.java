@@ -71,7 +71,7 @@ public class NSucursales {
         sala.setCapacidad(sc.nextInt());
         sala.setNumSala(Integer.toString(contSalas));
         contSalas++;
-        salas.insertarSala(sala);
+        salas.InsertarSala(sala);
     }        
     
     
