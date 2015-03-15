@@ -15,7 +15,17 @@ public class NDSalas {
     private int capacidad;
     private PilaAsientos asientos;
     private String numSala;
+    private NCPelicula pelicula;
 
+    public NCPelicula getPelicula() {
+        return pelicula;
+    }
+
+    public void setPelicula(NCPelicula pelicula) {
+        this.pelicula = pelicula;
+    }
+
+    
     public NDSalas getAnterior() {
         return anterior;
     }

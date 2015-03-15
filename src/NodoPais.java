@@ -1,22 +1,26 @@
+import java.util.*;
 
 public class NodoPais {
+    Scanner sc = new Scanner(System.in);
+    
     private int posicion;
     private String nombrePais;
     private NodoPais der;
     private NodoPais izq;
-    private LSucursales Sucursales;
+    private LSucursales sucursales;
+    private boolean existe=false;
     
     
     public NodoPais(){
         der=null;
         izq=null;
     }
-    public void setSucur(LSucursales Sucursales){
-        this.Sucursales=Sucursales;
+    public void setSucur(LSucursales sucursales){
+        this.sucursales=sucursales;
     }
     
     public LSucursales getSucur(){
-        return Sucursales;
+        return sucursales;
     }
     
     public NodoPais(String nombrePais){
@@ -57,6 +61,35 @@ public class NodoPais {
     
     public void mostrar(){
         System.out.println("Pos: "+posicion+" Pais: "+nombrePais );
+    }
+    
+    public void CompararNom(String nom){
+        NSucursales aux = sucursales.getCabeza();
+        while(aux!=null){
+            if(aux.getNombre().equals(nom)){
+                existe=true;
+                System.out.println("-Nombre ya existente, intente de nuevo- ");
+            }
+                
+            aux=aux.getProximo();
+        }
+        
+    }
+    
+    public void CrearSucursal(){
+        NSucursales nuevo = new NSucursales();
+        System.out.println("Ingrese el nombre de la Sucursal: ");
+        
+        do{
+           existe=false;
+           String nom = sc.next().toUpperCase();
+           CompararNom(nom);
+        }while (existe!=false);
+        
+        System.out.println("Ingrese la direccion: ");
+        nuevo.setDireccion(sc.next());
+        
+        sucursales.InsertaSucursal(nuevo);
     }
     
 }

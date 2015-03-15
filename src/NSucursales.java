@@ -73,6 +73,32 @@ public class NSucursales {
         contSalas++;
         salas.insertarSala(sala);
     }        
+    
+    
+    public void modificar(){
+        System.out.println("Que desea modificar: ");
+        System.out.println("1 Nombre\n2 Direccion\n3 Peliculas\n4 Salas");
+        int i=sc.nextInt();
+      switch(i){
+          case 1:
+              nombre=sc.next();
+              break;
+          case 2: 
+              direccion=sc.next();
+              break;
+          case 3:
+              pelis.modificar();
+              break;
+          case 4:
+              salas.modificar();
+              
+          
+      }
+       
+       
+    }
+    
+    
         
     
     
