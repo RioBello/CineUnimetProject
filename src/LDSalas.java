@@ -34,4 +34,24 @@ public class LDSalas {
         }
     }
     
+    public void insertarSala(NDSalas nuevo) {
+        if (cabeza==null) {
+            cabeza = cola = nuevo;
+        } else {
+            if(cabeza==cola){
+                nuevo.setProx(cabeza);
+                cola = cabeza;
+                cabeza = nuevo;
+                cola.setAnterior(cabeza);
+            }
+            else{
+                nuevo.setProx(cabeza);
+                cabeza.setAnterior(nuevo);
+                cabeza = nuevo;
+            }   
+        }
+        
+
+    }
+    
 }
