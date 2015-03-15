@@ -4,7 +4,25 @@ public class NCPelicula {
     private String director;
     private String ano;
     private boolean enCartelera;
+    private NCPelicula prox;
+    private NCPelicula anterior;
 
+    public NCPelicula getProx() {
+        return prox;
+    }
+
+    public void setProx(NCPelicula prox) {
+        this.prox = prox;
+    }
+
+    public NCPelicula getAnterior() {
+        return anterior;
+    }
+
+    public void setAnterior(NCPelicula anterior) {
+        this.anterior = anterior;
+    }
+    
     public String getTitulo() {
         return titulo;
     }
