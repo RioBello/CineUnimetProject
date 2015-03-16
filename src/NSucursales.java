@@ -90,7 +90,7 @@ public class NSucursales {
               pelis.modificar();
               break;
           case 4:
-              salas.modificar();
+              break;
               
           
       }
@@ -107,6 +107,7 @@ public class NSucursales {
              if(nodo.getFormato().equals(pelicula.getFormato()) && nodo.getPelicula()==null)
              {
                  nodo.setPelicula(pelicula);
+                 AsignarBoletoAsiento(nodo);
                  resp=1;
              }
              else if(nodo.getPelicula()!=null)
@@ -128,7 +129,15 @@ public class NSucursales {
      {
          PilaAsientos pilaA = sala.getAsientos();
          NPAsientos asiento = new NPAsientos();
+         NBoleto boleto = new NBoleto();
          
+         while(pilaA != null)
+         {
+             asiento = pilaA.pop();
+             boleto.setAsiento(asiento);
+             boleto.setSala(sala);
+             entradas.encolar(boleto);
+         }
      }
         
     
