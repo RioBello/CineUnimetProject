@@ -6,6 +6,7 @@ public class NCPelicula {
     private boolean enCartelera;
     private NCPelicula prox;
     private NCPelicula anterior;
+    private String formato;
 
     public NCPelicula getProx() {
         return prox;
@@ -54,6 +55,16 @@ public class NCPelicula {
     public void setEnCartelera(boolean enCartelera) {
         this.enCartelera = enCartelera;
     }
+
+    public String getFormato() {
+        return formato;
+    }
+
+    public void setFormato(String formato) {
+        this.formato = formato;
+    }
+    
+    
     
     public void mostrar(){
         System.out.println("Pelicula: "+titulo);

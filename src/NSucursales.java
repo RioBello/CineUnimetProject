@@ -1,4 +1,4 @@
-import java.util.*;
+ import java.util.*;
 
 public class NSucursales {
     Scanner sc = new Scanner(System.in);
@@ -98,7 +98,38 @@ public class NSucursales {
        
     }
     
-    
+     public void AsignarPeliculaSala(NCPelicula pelicula)
+     {
+         NDSalas nodo = salas.getCabeza();
+         int resp=0;
+         while(nodo.getProx()!=null && resp==0)
+         {
+             if(nodo.getFormato().equals(pelicula.getFormato()) && nodo.getPelicula()==null)
+             {
+                 nodo.setPelicula(pelicula);
+                 resp=1;
+             }
+             else if(nodo.getPelicula()!=null)
+             {
+                 System.out.println("La sala ya posee una pelicula");
+                 resp = 0;
+             }
+             else if (nodo.getProx()==null)
+             {
+                 System.out.println("El formato de pelicula no coincide.");
+                 
+             }
+             nodo = nodo.getProx();
+         }
+         
+     }
+     
+     public void AsignarBoletoAsiento(NDSalas sala)
+     {
+         PilaAsientos pilaA = sala.getAsientos();
+         NPAsientos asiento = new NPAsientos();
+         
+     }
         
     
     

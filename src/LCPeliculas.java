@@ -44,4 +44,15 @@ public class LCPeliculas {
         
     }
     
+    public int ContarPeliculas()
+    {
+        NCPelicula aux = cabeza;
+        int cont = 0;
+        while(aux.getProx()!=cabeza)
+        {
+            aux = aux.getProx();
+            cont++;
+        }
+        return cont;
+    }
 }

@@ -1,4 +1,4 @@
-
+ 
 public class LDSalas {
     private NDSalas cabeza;
     private NDSalas cola;
@@ -145,4 +145,6 @@ public class LDSalas {
     {
         
     }
+    
+    
 }

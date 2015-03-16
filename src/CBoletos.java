@@ -38,7 +38,10 @@ public class CBoletos {
         return aux;  
     }
     
-    
+    public void BoletosMax()
+    {
+        
+    }
     
     
     

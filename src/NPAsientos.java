@@ -2,8 +2,14 @@
 public class NPAsientos {
     private int num;
     private NPAsientos prox;
-    private boolean acupado;
+    private boolean ocupado = false;
 
+    
+    public NPAsientos()
+    {
+        
+    }
+    
     public NPAsientos getProx() {
         return prox;
     }
@@ -20,17 +26,17 @@ public class NPAsientos {
         this.num = num;
     }
 
-    public boolean isAcupado() {
-        return acupado;
+    public boolean isOcupado() {
+        return ocupado;
     }
 
-    public void setAcupado(boolean acupado) {
-        this.acupado = acupado;
+    public void setOcupado(boolean ocupado) {
+        this.ocupado = ocupado;
     }
 
-    public NPAsientos(int num, boolean acupado) {
+    public NPAsientos(int num, boolean ocupado) {
         this.num = num;
-        this.acupado = acupado;
+        this.ocupado = ocupado;
     }
     
     
