@@ -168,9 +168,8 @@ public class arbolPaises {
     public void ElPais(){
         NodoPais ra = raiz;
         System.out.println("Indique el numero del pais: ");
-        if()
+       
         BuscarPais(ra,sc.nextInt());
-        me gusta
     }
     
 }
