@@ -10,7 +10,6 @@ public class Aplicacion {
         
         Pa.mostrarEnOrden(Pa.getRaiz());
         
-        Pa.
         
     }
     
