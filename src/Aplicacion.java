@@ -5,12 +5,17 @@ public class Aplicacion {
     arbolPaises Pa = new arbolPaises();
     
     public void xxxxx(){
-       LCPeliculas listaP = new LCPeliculas();
+       NSucursales sucur = new NSucursales();
+       for(int i=0; i<3;i++){
+       sucur.CrearSala();
+       sucur.getSalas().mostrar();
+       NDSalas sala = sucur.getSalas().BuscarSala(sc.nextInt());
+       sala.CrearAsientos();
+       sala.mostrarAsientos();
+       }
+       sucur.CrearColaBoletos();
        
-       for(int i=0; i<4;i++)
-           listaP.CrearPelicula();
-           
-       listaP.EliminarPeli().mostrar();
+       
        
       
         

@@ -16,7 +16,7 @@ public class ArchivoObjetos
         file = new FileOutputStream ("ArbolPaises.DAT");
             ObjectOutputStream output = new ObjectOutputStream (file);
             output.writeObject(pais);
-            output.close();
+            output.close(); 
     }
     
     public Object ObtenerArchivo() throws Exception

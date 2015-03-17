@@ -24,11 +24,15 @@ public class CBoletos {
     }
     
     public void encolar(NBoleto nuevo){
+        if(cabeza==null)
+            cabeza=nuevo;
+        else{
         NBoleto aux = cabeza;
         while(aux.getProx()!=null)
             aux=aux.getProx();
         
         aux.setProx(nuevo); 
+        }
     }
     
     public NBoleto desencolar(){

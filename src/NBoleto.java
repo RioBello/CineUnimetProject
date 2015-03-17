@@ -1,7 +1,7 @@
 
 public class NBoleto {
     private NBoleto prox;
-    private NPAsientos asiento;
+    private int num;
     private NDSalas sala;
 
     public NBoleto getProx() {
@@ -12,14 +12,15 @@ public class NBoleto {
         this.prox = prox;
     }
 
-    public NPAsientos getAsiento() {
-        return asiento;
+    public int getNum() {
+        return num;
     }
 
-    public void setAsiento(NPAsientos asiento) {
-        this.asiento = asiento;
+    public void setNum(int num) {
+        this.num = num;
     }
 
+   
     public NDSalas getSala() {
         return sala;
     }

@@ -7,7 +7,7 @@ public class NDSalas {
     private NDSalas anterior;
     private String formato;
     private int capacidad;
-    private PilaAsientos asientos;
+    private PilaAsientos asientos = new PilaAsientos();
     private int numSala;
     private NCPelicula pelicula;
 
@@ -70,8 +70,9 @@ public class NDSalas {
     
     
     public void CrearAsientos(){
-        for(int i=0; i<capacidad; i++){
+        for(int i=capacidad; i>0; i--){
             NPAsientos aux = new NPAsientos(i,false);
+            //aux.mostrar();
             asientos.push(aux);
         }       
     }
@@ -106,5 +107,10 @@ public class NDSalas {
         
     }
     
-    
+    public void mostrarAsientos(){
+        PilaAsientos aux = asientos;
+        while(aux.peek()!=null){
+            aux.pop().mostrar();
+        }
+    }
 }

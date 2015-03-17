@@ -6,7 +6,7 @@ public class LDSalas {
     private NDSalas cabeza;
     private NDSalas cola;
     
-    public void LDSalas(){
+    public LDSalas(){
         cabeza=cola=null;
     }
     public NDSalas getCabeza() {

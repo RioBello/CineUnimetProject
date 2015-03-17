@@ -2,20 +2,34 @@
 public class PilaAsientos {
     private NPAsientos cabeza;
     
+    public PilaAsientos(){
+        cabeza=null;
+    }
     public NPAsientos peek(){
         return cabeza;
     }
     
     public void push(NPAsientos nuevo){
-        nuevo.setProx(cabeza);
-        cabeza=nuevo;
+        if(cabeza==null)
+            cabeza=nuevo;
+        else{
+            nuevo.setProx(cabeza);
+            cabeza=nuevo;
+        }
     }
     
     public NPAsientos pop(){
-        NPAsientos aux = cabeza;
-        aux.setProx(null);
-        cabeza=cabeza.getProx();
-        return aux;
+        NPAsientos eliminado = null;
+        if(cabeza!=null){
+            eliminado=cabeza;
+            cabeza=cabeza.getProx();
+            eliminado.setProx(null);
+        }
+        return eliminado;
+    }
+    
+    public void mostrar(){
+        
     }
     
     

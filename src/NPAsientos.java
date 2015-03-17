@@ -39,6 +39,14 @@ public class NPAsientos {
         this.ocupado = ocupado;
     }
     
+    public void mostrar(){
+        System.out.print("Asiento num =="+num+"=="+"status --> ");
+        if(ocupado==false)
+            System.out.println(" DISPONIBLE");
+        else
+            System.out.println(" OCUPADO");
+    }
+    
     
     
     

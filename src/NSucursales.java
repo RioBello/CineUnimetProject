@@ -107,8 +107,8 @@ public class NSucursales {
         }while(resp.equals("SI"));
     }
    
-     public void AsignarPeliculaSala(NCPelicula pelicula)
-     {
+    public void AsignarPeliculaSala(NCPelicula pelicula)
+    {
          NDSalas nodo = salas.getCabeza();
          int resp=0;
          while(nodo.getProx()!=null && resp==0)
@@ -116,7 +116,6 @@ public class NSucursales {
              if(nodo.getFormato().equals(pelicula.getFormato()) && nodo.getPelicula()==null)
              {
                  nodo.setPelicula(pelicula);
-                 AsignarBoletoAsiento(nodo);
                  resp=1;
              }
              else if(nodo.getPelicula()!=null)
@@ -132,22 +131,35 @@ public class NSucursales {
              nodo = nodo.getProx();
          }
          
-     }
+    }
      
-     public void AsignarBoletoAsiento(NDSalas sala)
-     {
-         PilaAsientos pilaA = sala.getAsientos();
-         NPAsientos asiento = new NPAsientos();
-         NBoleto boleto = new NBoleto();
+    public void CrearColaBoletos()
+    {
+        NDSalas aux =salas.getCabeza();
+        int cont=0;
          
-         while(pilaA != null)
-         {
-             asiento = pilaA.pop();
-             boleto.setAsiento(asiento);
-             boleto.setSala(sala);
-             entradas.encolar(boleto);
-         }
-     }
+        while(aux!=null){
+            for(int j=0; j<aux.getCapacidad();j++){
+                NBoleto nuevo = new NBoleto();
+                cont++;
+                nuevo.setNum(cont);
+                
+                entradas.encolar(nuevo); 
+            }
+                 
+            aux=aux.getProx();
+            
+        }
+        System.out.println("TOTAL DE : "+cont);
+        
+        NBoleto cab = entradas.getCabeza();
+         
+        for(int i=0;i<cont;i++){
+            System.out.println("~"+cab.getNum()+"~");
+            cab = cab.getProx();
+        }
+        
+    }
         
     
     
