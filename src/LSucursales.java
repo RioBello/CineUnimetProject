@@ -15,6 +15,8 @@ public class LSucursales {
     
     public void mostrar(){
         NSucursales aux = cabeza;
+        System.out.println("Las Socursales son:");
+        System.out.println("------------------");
         while(aux!= null){
             aux.mostrar();
             aux=aux.getProximo();
@@ -37,10 +39,10 @@ public class LSucursales {
         
         if(cabeza!=null){
             NSucursales aux = cabeza;
-            if(cabeza.getNombre()==eliminar)
+            if(cabeza.getNombre().equals(eliminar))
                 cabeza=cabeza.getProximo();
             else{
-                while(aux.getProximo().getNombre() != eliminar){
+                while(!aux.getProximo().getNombre().equals(eliminar)){
                     aux=aux.getProximo();   
                 }
             }
@@ -50,7 +52,7 @@ public class LSucursales {
     
     public void ModificarSucur(){
         NSucursales aux=cabeza;
-        String nombre=sc.next().toUpperCase();
+        String nombre=sc.nextLine().toUpperCase();
         
         while(!aux.getNombre().equals(nombre)){
             aux=aux.getProximo();

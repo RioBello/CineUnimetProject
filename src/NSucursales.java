@@ -51,16 +51,11 @@ public class NSucursales {
     public void setSalas(LDSalas salas) {
         this.salas = salas;
     }
-
-    public void modificarSucursal(String nombre, String direccion) {
-        this.nombre = nombre;
-        this.direccion = direccion;
-    }
     
     
     public void mostrar(){
         System.out.println("Sucursal: "+nombre);
-        System.out.println("Direccion: "+direccion+"\n");
+        System.out.println("Direccion: "+direccion);
     }
     
     public void CrearSala(){
@@ -76,27 +71,40 @@ public class NSucursales {
     
     
     public void modificar(){
-        System.out.println("Que desea modificar: ");
-        System.out.println("1 Nombre\n2 Direccion\n3 Peliculas\n4 Salas");
-        int i=sc.nextInt();
-      switch(i){
-          case 1:
-              nombre=sc.next();
-              break;
-          case 2: 
-              direccion=sc.next();
-              break;
-          case 3:
-              pelis.modificar();
-              break;
-          case 4:
-              break;
-              
-          
-      }
-       
-       
+        String resp;
+        do{
+            System.out.println("Que desea modificar: ");
+            System.out.println("1 Nombre\n2 Direccion\n3 Peliculas\n4 Salas");
+            System.out.print("-->");
+            int i=sc.nextInt();
+            switch(i){
+              case 1:
+                  System.out.print("Ingrese el nuevo nombre:");
+                  sc.nextLine();
+                  nombre=sc.nextLine().toUpperCase();
+                  System.out.println("!Nombre Cambiado!");
+                  mostrar();
+                  break;
+              case 2: 
+                  System.out.println("Ingrese la nueva direccion: ");
+                  sc.nextLine();
+                  direccion=sc.nextLine();
+                  System.out.println("!Direccion cambiada!");
+                  mostrar();
+                  break;
+              case 3:
+                  pelis.modificar();
+                  break;
+              case 4:
+                  break;
+            }
+            
+           System.out.println("Desea modificar algo mia: si/no ");
+           resp=sc.next().toUpperCase();
+           
+        }while(resp.equals("SI"));
     }
+    
     
      public void AsignarPeliculaSala(NCPelicula pelicula)
      {

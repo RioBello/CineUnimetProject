@@ -11,13 +11,12 @@ public class Aplicacion {
         
         Pa.ElPais();
         
-        for(int j=0; j<2; j++)
+        for(int j=0; j<3; j++)
         Pa.getEncontrado().CrearSucursal();
         
-        Pa.getEncontrado().getSucursales().mostrar();
+        Pa.getEncontrado().EliminarSucursal();
         
-        Pa.getEncontrado().BuscarSucursal();
-        Pa.getEncontrado().getEncontrado().mostrar();
+        
     }
     
     

@@ -133,6 +133,12 @@ public class NodoPais {
         }
     }
     
+    public void EliminarSucursal(){
+        sucursales.mostrar();
+        System.out.println("Indique el pais que desea eliminar: ");
+        sucursales.eliminarSucursal(sc.nextLine().toUpperCase());
+        sucursales.mostrar();
+    }
     
     public void modificarSucursales(){
         sucursales.ModificarSucur();
