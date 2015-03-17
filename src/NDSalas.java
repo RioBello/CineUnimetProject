@@ -1,20 +1,14 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+import java.util.*;
 
-/**
- *
- * @author AndrésEduardo
- */
 public class NDSalas {
+    Scanner sc = new Scanner(System.in);
+    
     private NDSalas prox;
     private NDSalas anterior;
     private String formato;
     private int capacidad;
     private PilaAsientos asientos;
-    private String numSala;
+    private int numSala;
     private NCPelicula pelicula;
 
     public NCPelicula getPelicula() {
@@ -34,11 +28,11 @@ public class NDSalas {
         this.anterior = anterior;
     }
 
-    public String getNumSala() {
+    public int getNumSala() {
         return numSala;
     }
 
-    public void setNumSala(String numSala) {
+    public void setNumSala(int numSala) {
         this.numSala = numSala;
     }
     
@@ -86,7 +80,31 @@ public class NDSalas {
         System.out.println("La sala: "+numSala+" tiene un formto: "+formato+" y una capacidad de: "+capacidad);
     }
     
-    
+    public void modificar(){
+        String resp;   
+        do{
+            System.out.println("Indique lo que desea modificar: ");
+            System.out.println("1 Formato\n2 Capacidad");
+            System.out.print("-->");
+            switch(sc.nextInt()){
+                case 1:
+                    System.out.println("Nuevo formato: ");
+                    formato=sc.next().toUpperCase();
+                    mostrar();
+                    break;
+                case 2:
+                    System.out.println("Nueva Capacidad: ");
+                    capacidad=sc.nextInt();
+                    mostrar();
+                    break;
+            }
+            
+            System.out.println("Desea realizar otra modificacion? si/no");
+            resp=sc.next().toUpperCase();
+        }while (resp=="SI");
+        
+        
+    }
     
     
 }

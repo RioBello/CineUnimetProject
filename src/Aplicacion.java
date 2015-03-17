@@ -5,7 +5,7 @@ public class Aplicacion {
     arbolPaises Pa = new arbolPaises();
     
     public void xxxxx(){
-        Pa.NuevoPais();
+       /* Pa.NuevoPais();
 
         Pa.mostrarEnOrden(Pa.getRaiz());
         
@@ -14,7 +14,13 @@ public class Aplicacion {
         for(int j=0; j<3; j++)
         Pa.getEncontrado().CrearSucursal();
         
-        Pa.getEncontrado().EliminarSucursal();
+        Pa.getEncontrado().BuscarSucursal();*/
+        NSucursales sucur = new NSucursales();
+        for(int j=0; j<3; j++)
+        sucur.CrearSala();
+        
+        sucur.getSalas().mostrar();
+        sucur.modificar();
         
         
     }

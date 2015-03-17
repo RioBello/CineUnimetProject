@@ -7,9 +7,9 @@ public class NSucursales {
 
     private String nombre;
     private String direccion;
-    private LCPeliculas pelis;
-    private LDSalas salas;
-    private CBoletos entradas;
+    private LCPeliculas pelis = new LCPeliculas();
+    private LDSalas salas = new LDSalas();
+    private CBoletos entradas = new CBoletos();
     private int contSalas=1;
 
     public NSucursales getProximo() {
@@ -61,13 +61,14 @@ public class NSucursales {
     public void CrearSala(){
         NDSalas sala = new NDSalas();
         System.out.println("Ingrese el formato de la sala: ");
-        sala.setFormato(sc.next());
+        sala.setFormato(sc.next().toUpperCase());
         System.out.println("Indique la capacidad de la sala: ");
         sala.setCapacidad(sc.nextInt());
-        sala.setNumSala(Integer.toString(contSalas));
+        sala.setNumSala(contSalas);
         contSalas++;
         salas.InsertarSala(sala);
     }        
+   
     
     
     public void modificar(){
@@ -96,6 +97,7 @@ public class NSucursales {
                   pelis.modificar();
                   break;
               case 4:
+                  salas.modificar();
                   break;
             }
             
@@ -104,8 +106,7 @@ public class NSucursales {
            
         }while(resp.equals("SI"));
     }
-    
-    
+   
      public void AsignarPeliculaSala(NCPelicula pelicula)
      {
          NDSalas nodo = salas.getCabeza();

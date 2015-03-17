@@ -1,5 +1,8 @@
+ import java.util.*;
  
 public class LDSalas {
+    Scanner sc = new Scanner(System.in);
+    
     private NDSalas cabeza;
     private NDSalas cola;
     
@@ -32,6 +35,14 @@ public class LDSalas {
                 aux=aux.getProx();
             }
         }
+    }
+    
+    public NDSalas BuscarSala(int num){
+        NDSalas aux = cabeza;
+        while (aux.getNumSala()!= num)
+            aux = aux.getProx();
+        
+        return aux;
     }
     
     public void InsertarSala(NDSalas nuevo) {
@@ -143,6 +154,9 @@ public class LDSalas {
     
     public void modificar()
     {
+        mostrar();
+        System.out.println("Indique la sala que desea modificar: ");
+        BuscarSala(sc.nextInt()).modificar();
         
     }
     
