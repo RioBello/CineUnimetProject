@@ -102,7 +102,7 @@ public class NSucursales {
             }
             
            System.out.println("Desea modificar algo mia: si/no ");
-           resp=sc.next().toUpperCase();
+           resp=sc.nextLine().toUpperCase();
            
         }while(resp.equals("SI"));
     }

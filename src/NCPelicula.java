@@ -1,11 +1,13 @@
+import java.util.*;
 
 public class NCPelicula {
+    Scanner sc = new Scanner(System.in);
+    
     private String titulo;
     private String director;
     private String ano;
     private boolean enCartelera;
     private NCPelicula prox;
-    private NCPelicula anterior;
     private String formato;
 
     public NCPelicula getProx() {
@@ -14,14 +16,6 @@ public class NCPelicula {
 
     public void setProx(NCPelicula prox) {
         this.prox = prox;
-    }
-
-    public NCPelicula getAnterior() {
-        return anterior;
-    }
-
-    public void setAnterior(NCPelicula anterior) {
-        this.anterior = anterior;
     }
     
     public String getTitulo() {
@@ -75,4 +69,41 @@ public class NCPelicula {
             System.out.println("NO se encuentra en cartelera");
     }
     
+    public void modificar(){
+        String resp;
+        do{
+        System.out.println("Que desea modificar: ");
+        System.out.println("1 Titulo\n2 Director\n3 Ano\n4 Formato");
+            switch(sc.nextInt()){
+                case 1:
+                    System.out.println("Nuevo Ttulo: ");
+                    sc.nextLine();
+                    titulo=sc.nextLine().toUpperCase();
+                    mostrar();
+                    break;
+                case 2:
+                    System.out.println("Nuevo Director: ");
+                    sc.nextLine();
+                    director= sc.nextLine();
+                    mostrar();
+                    break;
+                case 3:
+                    System.out.println("Nuevo ano: ");
+                    sc.nextLine();
+                    ano=sc.nextLine();
+                    mostrar();
+                    break;
+                case 4:
+                    System.out.println("Nuevo formato: ");
+                    sc.nextLine();
+                    formato=sc.nextLine();
+                    mostrar();
+                    break;
+            }
+         System.out.println("Desea seguir modificando PELICULA");
+         resp=sc.nextLine().toUpperCase();
+         }while(resp.equals("SI"));
+    
+    
+    }
 }

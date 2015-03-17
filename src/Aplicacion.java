@@ -5,23 +5,14 @@ public class Aplicacion {
     arbolPaises Pa = new arbolPaises();
     
     public void xxxxx(){
-       /* Pa.NuevoPais();
-
-        Pa.mostrarEnOrden(Pa.getRaiz());
-        
-        Pa.ElPais();
-        
-        for(int j=0; j<3; j++)
-        Pa.getEncontrado().CrearSucursal();
-        
-        Pa.getEncontrado().BuscarSucursal();*/
-        NSucursales sucur = new NSucursales();
-        for(int j=0; j<3; j++)
-        sucur.CrearSala();
-        
-        sucur.getSalas().mostrar();
-        sucur.modificar();
-        
+       LCPeliculas listaP = new LCPeliculas();
+       
+       for(int i=0; i<4;i++)
+           listaP.CrearPelicula();
+           
+       listaP.EliminarPeli().mostrar();
+       
+      
         
     }
     
