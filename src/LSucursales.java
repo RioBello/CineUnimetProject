@@ -5,6 +5,10 @@ public class LSucursales {
    
     private NSucursales cabeza;
     
+    public LSucursales(){
+        cabeza=null;
+    }
+    
     public NSucursales getCabeza(){
         return cabeza;
     }
@@ -18,11 +22,15 @@ public class LSucursales {
     }
     
     public void InsertaSucursal(NSucursales nuevo){
-        NSucursales aux = cabeza;
-        while(aux.getProximo()!= null){
-            aux=aux.getProximo();
+        if(cabeza==null)
+            cabeza=nuevo;
+        else{
+            NSucursales aux = cabeza;
+            while(aux.getProximo()!= null){
+                aux=aux.getProximo();
+            }
+            aux.setProximo(nuevo);
         }
-        aux.setProximo(nuevo);
     }
     
     public void eliminarSucursal(String eliminar){

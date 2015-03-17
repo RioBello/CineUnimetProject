@@ -5,13 +5,19 @@ public class Aplicacion {
     arbolPaises Pa = new arbolPaises();
     
     public void xxxxx(){
-        for(int i=0; i<4; i++){
-            Pa.NuevoPais();
-        }
-        
+        Pa.NuevoPais();
+
         Pa.mostrarEnOrden(Pa.getRaiz());
         
         Pa.ElPais();
+        
+        for(int j=0; j<2; j++)
+        Pa.getEncontrado().CrearSucursal();
+        
+        Pa.getEncontrado().getSucursales().mostrar();
+        
+        Pa.getEncontrado().BuscarSucursal();
+        Pa.getEncontrado().getEncontrado().mostrar();
     }
     
     

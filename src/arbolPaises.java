@@ -99,6 +99,40 @@ public class arbolPaises {
         else
             return 1 + contarNodos(aux.getIzq())+contarNodos(aux.getDer());   
     }
+
+    public Scanner getSc() {
+        return sc;
+    }
+
+    public void setSc(Scanner sc) {
+        this.sc = sc;
+    }
+
+    public Random getRdm() {
+        return rdm;
+    }
+
+    public void setRdm(Random rdm) {
+        this.rdm = rdm;
+    }
+
+    public boolean isExiste() {
+        return existe;
+    }
+
+    public void setExiste(boolean existe) {
+        this.existe = existe;
+    }
+
+    public NodoPais getEncontrado() {
+        return encontrado;
+    }
+
+    public void setEncontrado(NodoPais encontrado) {
+        this.encontrado = encontrado;
+    }
+    
+    
     
     public void CompararPos (NodoPais aux, int num){
         
@@ -169,7 +203,6 @@ public class arbolPaises {
     public void ElPais(){
         NodoPais ra = raiz;
         System.out.println("Indique el numero del pais: ");
-       
         BuscarPais(ra,sc.nextInt());
         System.out.println("El pais a buscar es: ");
         encontrado.mostrar();

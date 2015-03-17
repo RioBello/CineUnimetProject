@@ -60,7 +60,7 @@ public class NSucursales {
     
     public void mostrar(){
         System.out.println("Sucursal: "+nombre);
-        System.out.println("Direccion: "+direccion+"/n");
+        System.out.println("Direccion: "+direccion+"\n");
     }
     
     public void CrearSala(){
