@@ -4,7 +4,7 @@ public class NDSalas {
     Scanner sc = new Scanner(System.in);
     
     private NDSalas prox;
-    private NDSalas anterior;
+    private NDSalas anterior    ;
     private String formato;
     private int capacidad;
     private PilaAsientos asientos = new PilaAsientos();
@@ -80,6 +80,7 @@ public class NDSalas {
 
     public void setCapacidad(int capacidad) {
         this.capacidad = capacidad;
+        CrearAsientos();
     }
 
     public PilaAsientos getAsientos() {
@@ -96,7 +97,7 @@ public class NDSalas {
             NPAsientos aux = new NPAsientos(i,false);
             //aux.mostrar();
             asientos.push(aux);
-        }       
+        }      
     }
     
     public void mostrar(){
@@ -138,23 +139,36 @@ public class NDSalas {
     }
     
     public void OcuparAsiento(NBoleto nuevo) throws Exception{
-        int num = sc.nextInt();
-        PilaAsientos aux = new PilaAsientos();
-        PilaAsientos rec = asientos;
-        
-        while(rec.peek().getNum()!=num){
-            aux.push(rec.pop());
-        }
-        if(!rec.peek().isOcupado()){
-            rec.peek().setBoleto(nuevo);
-            while(aux.peek()!=null){
-                rec.push(aux.pop());
-            }
+        if(asientos!=null){
+            System.out.print("Asiento-->");
+            int num = sc.nextInt();
+            int cont=1;
+            PilaAsientos aux = new PilaAsientos();
+            PilaAsientos rec = asientos;
             
-        }else{
-            Exception ex = new Exception("Asiento Ocupado");
-            throw ex;
-        } 
+            mostrarAsientos();
+            System.out.println("---");
+           
+            System.out.print("  ="+rec.peek().getNum()+"=  ");
+
+            while(cont!=num){
+                System.out.print("  ="+rec.peek().getNum()+"=  ");
+                aux.push(rec.pop());
+                cont++;
+            }
+            cont=1;
+            if(!rec.peek().isOcupado()){
+                rec.peek().setBoleto(nuevo);
+                while(aux.peek()!=null){
+                    rec.push(aux.pop());
+                }
+            }else{
+                Exception ex = new Exception("Asiento Ocupado");
+                throw ex;
+            } 
+            
+        }else
+            System.out.println("NO HAY ASIENTOS!!");
     }
     
     

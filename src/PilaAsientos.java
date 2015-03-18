@@ -28,9 +28,5 @@ public class PilaAsientos {
         return eliminado;
     }
     
-    public void mostrar(){
-        
-    }
-    
     
 }

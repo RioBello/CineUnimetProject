@@ -139,9 +139,11 @@ public class NSucursales {
         
     public void AsignarBoleto() throws Exception{
        salas.mostrar();
+        System.out.print("Sala de la peli--> ");
        NDSalas sala = salas.BuscarSala(sc.nextInt());
        sala.OcuparAsiento(entradas.desencolar());
        
+       sala.mostrarAsientos();
         
     }
    

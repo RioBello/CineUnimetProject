@@ -6,18 +6,19 @@ public class Aplicacion {
     
     public void xxxxx() throws Exception{
        NSucursales sucur = new NSucursales();
-       for(int i=0; i<3;i++)
+       for(int i=0; i<1;i++)
        sucur.CrearSala();
        
-       for(int i=0; i<2;i++){
+       for(int i=0; i<1;i++){
        NCPelicula nuevo = new NCPelicula();
-       
        sucur.InsertarPeliculaSala(nuevo.CrearPelicula());
            
        }
-       sucur.CrearColaBoletos();
        
-       for(int j=0; j<3; j++)
+       sucur.CrearColaBoletos();
+        System.out.println("--------------------------------");
+        
+      for(int j=0; j<3; j++)
        sucur.AsignarBoleto();
        
        
