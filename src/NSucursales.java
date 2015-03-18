@@ -107,31 +107,7 @@ public class NSucursales {
         }while(resp.equals("SI"));
     }
    
-    public void AsignarPeliculaSala(NCPelicula pelicula)
-    {
-         NDSalas nodo = salas.getCabeza();
-         int resp=0;
-         while(nodo.getProx()!=null && resp==0)
-         {
-             if(nodo.getFormato().equals(pelicula.getFormato()) && nodo.getPelicula()==null)
-             {
-                 nodo.setPelicula(pelicula);
-                 resp=1;
-             }
-             else if(nodo.getPelicula()!=null)
-             {
-                 System.out.println("La sala ya posee una pelicula");
-                 resp = 0;
-             }
-             else if (nodo.getProx()==null)
-             {
-                 System.out.println("El formato de pelicula no coincide.");
-                 
-             }
-             nodo = nodo.getProx();
-         }
-         
-    }
+    
      
     public void CrearColaBoletos()
     {
@@ -151,17 +127,22 @@ public class NSucursales {
             
         }
         System.out.println("TOTAL DE : "+cont);
-        
+        /*
         NBoleto cab = entradas.getCabeza();
          
         for(int i=0;i<cont;i++){
             System.out.println("~"+cab.getNum()+"~");
             cab = cab.getProx();
-        }
+        }*/
         
     }
         
-    
-    
-    
+    public void AsignarBoleto() throws Exception{
+       salas.mostrar();
+       NDSalas sala = salas.BuscarSala(sc.nextInt());
+       sala.OcuparAsiento(entradas.desencolar());
+       
+        
+    }
+   
 }

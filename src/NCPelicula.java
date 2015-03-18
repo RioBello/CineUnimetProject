@@ -6,10 +6,15 @@ public class NCPelicula {
     private String titulo;
     private String director;
     private String ano;
-    private boolean enCartelera;
-    private NCPelicula prox;
+    private boolean enCartelera = false;
+    private NCPelicula prox = new NCPelicula();
     private String formato;
 
+    
+    public NCPelicula(){
+        
+    }
+    
     public NCPelicula getProx() {
         return prox;
     }
@@ -60,13 +65,15 @@ public class NCPelicula {
     
     
     
+    
+    
     public void mostrar(){
-        System.out.println("Pelicula: "+titulo);
+        System.out.print("Pelicula: "+titulo);
         System.out.println("Director: "+director+" Ano: "+ano);
         if(enCartelera==true)
-            System.out.println("SI se encuentra en cartelera");
+            System.out.println("EN cartelera");
         else
-            System.out.println("NO se encuentra en cartelera");
+            System.out.println("NO en cartelera");
     }
     
     public void modificar(){
@@ -105,5 +112,17 @@ public class NCPelicula {
          }while(resp.equals("SI"));
     
     
+    }
+    public NCPelicula CrearPelicula(){
+        NCPelicula nuevo = new NCPelicula();
+        System.out.println("Ingrese el Titulo: ");
+        nuevo.setTitulo(sc.nextLine().toUpperCase());
+        System.out.println("Ingrese el director: "); 
+        nuevo.setDirector(sc.nextLine());
+        System.out.println("Ingrese el ano del filme: ");
+        nuevo.setAno(sc.nextLine());
+        System.out.println("Ingrese el formato del filme");
+        nuevo.setFormato(sc.nextLine().toUpperCase());
+       return nuevo;
     }
 }

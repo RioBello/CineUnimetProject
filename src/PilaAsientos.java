@@ -1,6 +1,6 @@
 
 public class PilaAsientos {
-    private NPAsientos cabeza;
+    private NPAsientos cabeza = new NPAsientos();
     
     public PilaAsientos(){
         cabeza=null;

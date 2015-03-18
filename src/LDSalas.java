@@ -3,8 +3,8 @@
 public class LDSalas {
     Scanner sc = new Scanner(System.in);
     
-    private NDSalas cabeza;
-    private NDSalas cola;
+    private NDSalas cabeza = new NDSalas();
+    private NDSalas cola = new NDSalas();
     
     public LDSalas(){
         cabeza=cola=null;

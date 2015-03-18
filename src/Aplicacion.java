@@ -4,16 +4,22 @@ public class Aplicacion {
     Scanner sc = new Scanner(System.in);
     arbolPaises Pa = new arbolPaises();
     
-    public void xxxxx(){
+    public void xxxxx() throws Exception{
        NSucursales sucur = new NSucursales();
-       for(int i=0; i<3;i++){
+       for(int i=0; i<3;i++)
        sucur.CrearSala();
-       sucur.getSalas().mostrar();
-       NDSalas sala = sucur.getSalas().BuscarSala(sc.nextInt());
-       sala.CrearAsientos();
-       sala.mostrarAsientos();
-       }
+       
+       // for(int i=0; i<2;i++){
+       NCPelicula nuevo = new NCPelicula();
+       
+       sucur.InsertarPeliculaSala(nuevo.CrearPelicula());
+           
+       //}
        sucur.CrearColaBoletos();
+       
+       for(int j=0; j<3; j++)
+       sucur.AsignarBoleto();
+       
        
        
        

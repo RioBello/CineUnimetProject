@@ -1,13 +1,22 @@
 
 public class NPAsientos {
     private int num;
-    private NPAsientos prox;
+    private NPAsientos prox = new NPAsientos();
     private boolean ocupado = false;
+    private NBoleto boleto = new NBoleto();
 
     
     public NPAsientos()
     {
         
+    }
+
+    public NBoleto getBoleto() {
+        return boleto;
+    }
+
+    public void setBoleto(NBoleto boleto) {
+        this.boleto = boleto;
     }
     
     public NPAsientos getProx() {

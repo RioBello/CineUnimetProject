@@ -190,7 +190,7 @@ public class arbolPaises {
     
     
     public void BuscarPais(NodoPais aux, int num){
-        
+        encontrado=null;
         if(aux!= null){
             BuscarPais(aux.getIzq(), num);
             if(aux.getPosicion()==num)

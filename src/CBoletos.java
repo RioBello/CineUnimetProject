@@ -9,7 +9,7 @@
  * @author AndrésEduardo
  */
 public class CBoletos {
-    private NBoleto cabeza;
+    private NBoleto cabeza = new NBoleto();
     
     public CBoletos(){
         cabeza=null;

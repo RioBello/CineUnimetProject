@@ -3,13 +3,35 @@ import java.util.*;
 public class NDSalas {
     Scanner sc = new Scanner(System.in);
     
-    private NDSalas prox;
-    private NDSalas anterior;
+    private NDSalas prox = new NDSalas();
+    private NDSalas anterior = new NDSalas();
     private String formato;
     private int capacidad;
     private PilaAsientos asientos = new PilaAsientos();
     private int numSala;
-    private NCPelicula pelicula;
+    private NCPelicula pelicula = new NCPelicula();
+    private boolean disponible =true;
+    
+    public NDSalas(){
+        
+    }
+
+    public boolean isDisponible() {
+        return disponible;
+    }
+
+    public void setDisponible(boolean disponible) {
+        this.disponible = disponible;
+    }
+    
+    
+
+    public NDSalas(String formato, int capacidad) {
+        this.formato = formato;
+        this.capacidad = capacidad;
+    }
+    
+    
 
     public NCPelicula getPelicula() {
         return pelicula;
@@ -79,6 +101,7 @@ public class NDSalas {
     
     public void mostrar(){
         System.out.println("La sala: "+numSala+" tiene un formto: "+formato+" y una capacidad de: "+capacidad);
+        pelicula.mostrar();
     }
     
     public void modificar(){
@@ -107,10 +130,32 @@ public class NDSalas {
         
     }
     
-    public void mostrarAsientos(){
+    public void mostrarAsientos() throws Exception{
         PilaAsientos aux = asientos;
         while(aux.peek()!=null){
             aux.pop().mostrar();
         }
     }
+    
+    public void OcuparAsiento(NBoleto nuevo) throws Exception{
+        int num = sc.nextInt();
+        PilaAsientos aux = new PilaAsientos();
+        PilaAsientos rec = asientos;
+        
+        while(rec.peek().getNum()!=num){
+            aux.push(rec.pop());
+        }
+        if(!rec.peek().isOcupado()){
+            rec.peek().setBoleto(nuevo);
+            while(aux.peek()!=null){
+                rec.push(aux.pop());
+            }
+            
+        }else{
+            Exception ex = new Exception("Asiento Ocupado");
+            throw ex;
+        } 
+    }
+    
+    
 }

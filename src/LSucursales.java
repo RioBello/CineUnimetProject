@@ -3,7 +3,7 @@ import java.util.*;
 public class LSucursales {
     Scanner sc = new Scanner(System.in);
    
-    private NSucursales cabeza;
+    private NSucursales cabeza = new NSucursales();
     
     public LSucursales(){
         cabeza=null;
@@ -15,7 +15,7 @@ public class LSucursales {
     
     public void mostrar(){
         NSucursales aux = cabeza;
-        System.out.println("Las Socursales son:");
+        System.out.println("Las Socursales son: ");
         System.out.println("------------------");
         while(aux!= null){
             aux.mostrar();
@@ -42,7 +42,7 @@ public class LSucursales {
             if(cabeza.getNombre().equals(eliminar))
                 cabeza=cabeza.getProximo();
             else{
-                while(!aux.getProximo().getNombre().equals(eliminar)){
+                while(!aux.getProximo().getNombre().equals(eliminar)){ 
                     aux=aux.getProximo();   
                 }
             }
