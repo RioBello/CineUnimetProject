@@ -3,8 +3,8 @@ import java.util.*;
 public class NDSalas {
     Scanner sc = new Scanner(System.in);
     
-    private NDSalas prox = new NDSalas();
-    private NDSalas anterior = new NDSalas();
+    private NDSalas prox;
+    private NDSalas anterior;
     private String formato;
     private int capacidad;
     private PilaAsientos asientos = new PilaAsientos();

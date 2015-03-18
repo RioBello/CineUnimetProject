@@ -7,7 +7,7 @@ public class NCPelicula {
     private String director;
     private String ano;
     private boolean enCartelera = false;
-    private NCPelicula prox = new NCPelicula();
+    private NCPelicula prox;
     private String formato;
 
     

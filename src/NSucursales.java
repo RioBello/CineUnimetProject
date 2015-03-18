@@ -145,4 +145,22 @@ public class NSucursales {
         
     }
    
+    public void InsertarPeliculaSala(NCPelicula nuevo){
+        if(salas!=null){
+            NDSalas rec = salas.getCabeza();
+            
+            while(rec!=null){
+                if(rec.isDisponible() && rec.getFormato().equals(nuevo.getFormato())){
+                    rec.setPelicula(nuevo);
+                }else{
+                    System.out.println("La Sala: "+rec.getNumSala()+"NO SE PUEDE");
+                }
+                rec=rec.getProx();
+            }
+           
+        }else{
+            System.out.println("No hay salas dsponibles");
+        }
+        salas.mostrar();
+    }
 }

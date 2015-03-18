@@ -1,6 +1,6 @@
 
 public class NBoleto {
-    private NBoleto prox = new NBoleto();
+    private NBoleto prox;
     private int num;
     
 

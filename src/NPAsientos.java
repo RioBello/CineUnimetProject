@@ -1,7 +1,7 @@
 
 public class NPAsientos {
     private int num;
-    private NPAsientos prox = new NPAsientos();
+    private NPAsientos prox;
     private boolean ocupado = false;
     private NBoleto boleto = new NBoleto();
 

@@ -5,8 +5,8 @@ public class NodoPais {
     
     private int posicion;
     private String nombrePais;
-    private NodoPais der = new NodoPais();
-    private NodoPais izq = new NodoPais();
+    private NodoPais der;
+    private NodoPais izq;
     private LSucursales sucursales = new LSucursales();
     private boolean existe=false;
     private NSucursales encontrado = new NSucursales();
