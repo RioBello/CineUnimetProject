@@ -45,7 +45,7 @@
         <Component class="javax.swing.JLabel" name="WarningIcon">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/Interfaz/warning-icon.png"/>
+              <Image iconType="3" name="/warning-icon.png"/>
             </Property>
           </Properties>
         </Component>
@@ -62,11 +62,6 @@
       </SubComponents>
     </Container>
     <Container class="javax.swing.JFrame" name="EditarPeliculasFrame">
-      <Properties>
-        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-          <Dimension value="[495, 409]"/>
-        </Property>
-      </Properties>
 
       <Layout>
         <DimensionLayout dim="0">
@@ -245,7 +240,7 @@
             <Component class="javax.swing.JButton" name="ActualizarInfo">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/Interfaz/reload-icon.png"/>
+                  <Image iconType="3" name="/reload-icon.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Actualizar"/>
               </Properties>
@@ -260,11 +255,6 @@
       </SubComponents>
     </Container>
     <Container class="javax.swing.JFrame" name="EditarSucursalFrame">
-      <Properties>
-        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-          <Dimension value="[495, 300]"/>
-        </Property>
-      </Properties>
 
       <Layout>
         <DimensionLayout dim="0">
@@ -416,7 +406,7 @@
             <Component class="javax.swing.JButton" name="ActualizarInfoSucursal">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/Interfaz/reload-icon.png"/>
+                  <Image iconType="3" name="/reload-icon.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Actualizar"/>
               </Properties>
@@ -426,11 +416,6 @@
       </SubComponents>
     </Container>
     <Container class="javax.swing.JFrame" name="EditarSalasFrame">
-      <Properties>
-        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-          <Dimension value="[495, 300]"/>
-        </Property>
-      </Properties>
 
       <Layout>
         <DimensionLayout dim="0">
@@ -623,7 +608,7 @@
             <Component class="javax.swing.JButton" name="ActualizarInfoSalas">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/Interfaz/reload-icon.png"/>
+                  <Image iconType="3" name="/reload-icon.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Actualizar"/>
               </Properties>
@@ -633,11 +618,6 @@
       </SubComponents>
     </Container>
     <Container class="javax.swing.JFrame" name="EditarCarteleraFrame">
-      <Properties>
-        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-          <Dimension value="[495, 300]"/>
-        </Property>
-      </Properties>
 
       <Layout>
         <DimensionLayout dim="0">
@@ -796,7 +776,7 @@
         <Component class="javax.swing.JButton" name="ModificarInfoCartelera">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/Interfaz/reload-icon.png"/>
+              <Image iconType="3" name="/reload-icon.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Actualizar"/>
           </Properties>

@@ -1,4 +1,5 @@
-package Interfaz;
+
+
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -18,8 +19,11 @@ public class InterfazCineUnimet extends javax.swing.JFrame {
      */
     public InterfazCineUnimet() {
         initComponents();
+       
+       ArchivoObjetos manejador = new ArchivoObjetos();
     }
-
+    
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -117,7 +121,7 @@ public class InterfazCineUnimet extends javax.swing.JFrame {
         EditarPeliculas = new javax.swing.JButton();
         EditarSalas = new javax.swing.JButton();
 
-        WarningIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/warning-icon.png"))); // NOI18N
+        WarningIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/warning-icon.png"))); // NOI18N
 
         PaisCreadoLabel.setText("El pais ya ha sido creado. Favor ingresar uno distinto");
 
@@ -153,8 +157,6 @@ public class InterfazCineUnimet extends javax.swing.JFrame {
                 .addGap(19, 19, 19))
         );
 
-        EditarPeliculasFrame.setPreferredSize(new java.awt.Dimension(495, 409));
-
         SeleccionePeliculaLabel.setText("Seleccione Pelicula:");
 
         PeliculasComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
@@ -177,7 +179,7 @@ public class InterfazCineUnimet extends javax.swing.JFrame {
 
         FormatoLabel.setText("Formato:");
 
-        ActualizarInfo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/reload-icon.png"))); // NOI18N
+        ActualizarInfo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/reload-icon.png"))); // NOI18N
         ActualizarInfo.setText("Actualizar");
 
         javax.swing.GroupLayout ModificarPeliculaPanelLayout = new javax.swing.GroupLayout(ModificarPeliculaPanel);
@@ -266,8 +268,6 @@ public class InterfazCineUnimet extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        EditarSucursalFrame.setPreferredSize(new java.awt.Dimension(495, 300));
-
         SucursalModificarLabel.setText("Sucursal a modificar:");
 
         NombreSucursalModificar.setBackground(new java.awt.Color(204, 204, 204));
@@ -286,7 +286,7 @@ public class InterfazCineUnimet extends javax.swing.JFrame {
 
         ModificarCartelera.setText("Modificar");
 
-        ActualizarInfoSucursal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/reload-icon.png"))); // NOI18N
+        ActualizarInfoSucursal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/reload-icon.png"))); // NOI18N
         ActualizarInfoSucursal.setText("Actualizar");
 
         javax.swing.GroupLayout SucursalModificarLayout = new javax.swing.GroupLayout(SucursalModificar);
@@ -363,8 +363,6 @@ public class InterfazCineUnimet extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        EditarSalasFrame.setPreferredSize(new java.awt.Dimension(495, 300));
-
         SeleccionarSalaLable.setText("Sala");
 
         SeleccionarSala.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
@@ -397,7 +395,7 @@ public class InterfazCineUnimet extends javax.swing.JFrame {
 
         CapacidadModificarLabel.setText("Capacidad:");
 
-        ActualizarInfoSalas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/reload-icon.png"))); // NOI18N
+        ActualizarInfoSalas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/reload-icon.png"))); // NOI18N
         ActualizarInfoSalas.setText("Actualizar");
 
         javax.swing.GroupLayout ModificarSalasPanelLayout = new javax.swing.GroupLayout(ModificarSalasPanel);
@@ -471,8 +469,6 @@ public class InterfazCineUnimet extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        EditarCarteleraFrame.setPreferredSize(new java.awt.Dimension(495, 300));
-
         EliminarPeliculaLabel.setText("Eliminar Pelicula:");
 
         SeleccionarPeliculaEliminar.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
@@ -503,7 +499,7 @@ public class InterfazCineUnimet extends javax.swing.JFrame {
 
         CarteleraLabel.setText("Cartelera:");
 
-        ModificarInfoCartelera.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/reload-icon.png"))); // NOI18N
+        ModificarInfoCartelera.setIcon(new javax.swing.ImageIcon(getClass().getResource("/reload-icon.png"))); // NOI18N
         ModificarInfoCartelera.setText("Actualizar");
 
         javax.swing.GroupLayout EditarCarteleraFrameLayout = new javax.swing.GroupLayout(EditarCarteleraFrame.getContentPane());
