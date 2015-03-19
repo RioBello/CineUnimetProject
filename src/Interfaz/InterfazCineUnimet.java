@@ -29,6 +29,65 @@ public class InterfazCineUnimet extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        PaisCreadoWarning = new javax.swing.JDialog();
+        WarningIcon = new javax.swing.JLabel();
+        PaisCreadoLabel = new javax.swing.JLabel();
+        PaisCreadoAceptar = new javax.swing.JButton();
+        EditarPeliculasFrame = new javax.swing.JFrame();
+        SeleccionePeliculaLabel = new javax.swing.JLabel();
+        PeliculasComboBox = new javax.swing.JComboBox();
+        SeleccionarPelicula = new javax.swing.JButton();
+        ModificarPeliculaPanel = new javax.swing.JPanel();
+        PeliculaSeleccionadaLabel = new javax.swing.JLabel();
+        PeliculaSeleccionada = new javax.swing.JTextField();
+        DirectorLabel = new javax.swing.JLabel();
+        ModificarDirector = new javax.swing.JTextField();
+        NombrePeliculaLabel = new javax.swing.JLabel();
+        ModificarNombre = new javax.swing.JTextField();
+        AñoLabel = new javax.swing.JLabel();
+        ModificarAno = new javax.swing.JTextField();
+        FormatoLabel = new javax.swing.JLabel();
+        ModificarFormato = new javax.swing.JTextField();
+        ActualizarInfo = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
+        EditarSucursalFrame = new javax.swing.JFrame();
+        SucursalModificarLabel = new javax.swing.JLabel();
+        NombreSucursalModificar = new javax.swing.JTextField();
+        SucursalModificar = new javax.swing.JPanel();
+        ModificarDireccionLabel = new javax.swing.JLabel();
+        ModificarDireccion = new javax.swing.JTextField();
+        ModificarNombreLabel = new javax.swing.JLabel();
+        ModificarNombreSucursal = new javax.swing.JTextField();
+        ModificarSalasLabel = new javax.swing.JLabel();
+        ModificarCarteleraLabel = new javax.swing.JLabel();
+        ModificarSalas = new javax.swing.JButton();
+        ModificarCartelera = new javax.swing.JButton();
+        ActualizarInfoSucursal = new javax.swing.JButton();
+        EditarSalasFrame = new javax.swing.JFrame();
+        SeleccionarSalaLable = new javax.swing.JLabel();
+        SeleccionarSala = new javax.swing.JComboBox();
+        ModificarSala = new javax.swing.JButton();
+        InfoSalasPanel = new javax.swing.JPanel();
+        jScrollPane4 = new javax.swing.JScrollPane();
+        MostrarInfoSalas = new javax.swing.JTextArea();
+        ModificarSalasPanel = new javax.swing.JPanel();
+        ModificarFormatoLabel = new javax.swing.JLabel();
+        ModificarFormatoComboBox = new javax.swing.JComboBox();
+        CapacidadModificarLabel = new javax.swing.JLabel();
+        ModificarCapacidad = new javax.swing.JTextField();
+        ActualizarInfoSalas = new javax.swing.JButton();
+        EditarCarteleraFrame = new javax.swing.JFrame();
+        EliminarPeliculaLabel = new javax.swing.JLabel();
+        SeleccionarPeliculaEliminar = new javax.swing.JComboBox();
+        EliminarPelicula = new javax.swing.JButton();
+        AgregarPeliculaLabel = new javax.swing.JLabel();
+        IntroducirPelicula = new javax.swing.JTextField();
+        AgregarPelicula = new javax.swing.JButton();
+        CarteleraPanel = new javax.swing.JPanel();
+        jScrollPane5 = new javax.swing.JScrollPane();
+        MostrarCartelera = new javax.swing.JTextArea();
+        CarteleraLabel = new javax.swing.JLabel();
+        ModificarInfoCartelera = new javax.swing.JButton();
         Tabs = new javax.swing.JTabbedPane();
         PaisesTab = new javax.swing.JPanel();
         PaisLabel = new javax.swing.JLabel();
@@ -49,7 +108,458 @@ public class InterfazCineUnimet extends javax.swing.JFrame {
         InfoSucursalLabel = new javax.swing.JLabel();
         InformacionSucursalPanel = new javax.swing.JPanel();
         DireccionSucursalLabel = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        DireccionSucursal = new javax.swing.JTextField();
+        CarteleraSucursalLabel = new javax.swing.JLabel();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        CarteleraSucursal = new javax.swing.JTextArea();
+        SalasSucursalLabel = new javax.swing.JLabel();
+        SalasSucursal = new javax.swing.JTextField();
+        EditarPeliculas = new javax.swing.JButton();
+        EditarSalas = new javax.swing.JButton();
+
+        WarningIcon.setIcon(new javax.swing.ImageIcon("C:\\Users\\Bernardo\\Desktop\\PROGRAMACION\\GitHub\\CineUnimetProject\\warning-icon.png")); // NOI18N
+
+        PaisCreadoLabel.setText("El pais ya ha sido creado. Favor ingresar uno distinto");
+
+        PaisCreadoAceptar.setText("Aceptar");
+
+        javax.swing.GroupLayout PaisCreadoWarningLayout = new javax.swing.GroupLayout(PaisCreadoWarning.getContentPane());
+        PaisCreadoWarning.getContentPane().setLayout(PaisCreadoWarningLayout);
+        PaisCreadoWarningLayout.setHorizontalGroup(
+            PaisCreadoWarningLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(PaisCreadoWarningLayout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addComponent(WarningIcon)
+                .addGap(18, 18, 18)
+                .addComponent(PaisCreadoLabel)
+                .addContainerGap(50, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PaisCreadoWarningLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(PaisCreadoAceptar)
+                .addGap(35, 35, 35))
+        );
+        PaisCreadoWarningLayout.setVerticalGroup(
+            PaisCreadoWarningLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(PaisCreadoWarningLayout.createSequentialGroup()
+                .addGroup(PaisCreadoWarningLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(PaisCreadoWarningLayout.createSequentialGroup()
+                        .addGap(33, 33, 33)
+                        .addComponent(WarningIcon))
+                    .addGroup(PaisCreadoWarningLayout.createSequentialGroup()
+                        .addGap(50, 50, 50)
+                        .addComponent(PaisCreadoLabel)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 10, Short.MAX_VALUE)
+                .addComponent(PaisCreadoAceptar)
+                .addGap(19, 19, 19))
+        );
+
+        EditarPeliculasFrame.setPreferredSize(new java.awt.Dimension(495, 409));
+
+        SeleccionePeliculaLabel.setText("Seleccione Pelicula:");
+
+        PeliculasComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
+        SeleccionarPelicula.setText("Seleccionar");
+
+        ModificarPeliculaPanel.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
+
+        PeliculaSeleccionadaLabel.setText("Pelicula a modificar:");
+
+        PeliculaSeleccionada.setEditable(false);
+        PeliculaSeleccionada.setBackground(new java.awt.Color(204, 204, 204));
+        PeliculaSeleccionada.setForeground(new java.awt.Color(204, 204, 204));
+
+        DirectorLabel.setText("Director:");
+
+        NombrePeliculaLabel.setText("Nombre:");
+
+        AñoLabel.setText("Año:");
+
+        FormatoLabel.setText("Formato:");
+
+        ActualizarInfo.setIcon(new javax.swing.ImageIcon("C:\\Users\\Bernardo\\Desktop\\PROGRAMACION\\GitHub\\CineUnimetProject\\reload-icon.png")); // NOI18N
+        ActualizarInfo.setText("Actualizar");
+
+        javax.swing.GroupLayout ModificarPeliculaPanelLayout = new javax.swing.GroupLayout(ModificarPeliculaPanel);
+        ModificarPeliculaPanel.setLayout(ModificarPeliculaPanelLayout);
+        ModificarPeliculaPanelLayout.setHorizontalGroup(
+            ModificarPeliculaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(ModificarPeliculaPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(ModificarPeliculaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(PeliculaSeleccionadaLabel)
+                    .addComponent(PeliculaSeleccionada)
+                    .addComponent(DirectorLabel)
+                    .addComponent(ModificarDirector)
+                    .addComponent(NombrePeliculaLabel)
+                    .addComponent(AñoLabel)
+                    .addComponent(FormatoLabel)
+                    .addComponent(ModificarNombre)
+                    .addComponent(ModificarAno)
+                    .addComponent(ModificarFormato, javax.swing.GroupLayout.DEFAULT_SIZE, 250, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(ActualizarInfo, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+        ModificarPeliculaPanelLayout.setVerticalGroup(
+            ModificarPeliculaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(ModificarPeliculaPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(PeliculaSeleccionadaLabel)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(PeliculaSeleccionada, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(DirectorLabel)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(ModificarDirector, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(8, 8, 8)
+                .addComponent(NombrePeliculaLabel)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(ModificarNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(AñoLabel)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(ModificarAno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(FormatoLabel)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(ModificarPeliculaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(ModificarFormato, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(ActualizarInfo))
+                .addContainerGap(14, Short.MAX_VALUE))
+        );
+
+        jButton1.setText("Eliminar");
+
+        javax.swing.GroupLayout EditarPeliculasFrameLayout = new javax.swing.GroupLayout(EditarPeliculasFrame.getContentPane());
+        EditarPeliculasFrame.getContentPane().setLayout(EditarPeliculasFrameLayout);
+        EditarPeliculasFrameLayout.setHorizontalGroup(
+            EditarPeliculasFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(EditarPeliculasFrameLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(EditarPeliculasFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(ModificarPeliculaPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(EditarPeliculasFrameLayout.createSequentialGroup()
+                        .addGroup(EditarPeliculasFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(SeleccionePeliculaLabel)
+                            .addGroup(EditarPeliculasFrameLayout.createSequentialGroup()
+                                .addComponent(PeliculasComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(90, 90, 90)
+                                .addComponent(SeleccionarPelicula, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(0, 18, Short.MAX_VALUE)))
+                .addContainerGap())
+        );
+        EditarPeliculasFrameLayout.setVerticalGroup(
+            EditarPeliculasFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(EditarPeliculasFrameLayout.createSequentialGroup()
+                .addGap(40, 40, 40)
+                .addComponent(SeleccionePeliculaLabel)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(EditarPeliculasFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(PeliculasComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(SeleccionarPelicula)
+                    .addComponent(jButton1))
+                .addGap(45, 45, 45)
+                .addComponent(ModificarPeliculaPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        EditarSucursalFrame.setPreferredSize(new java.awt.Dimension(495, 300));
+
+        SucursalModificarLabel.setText("Sucursal a modificar:");
+
+        NombreSucursalModificar.setBackground(new java.awt.Color(204, 204, 204));
+
+        SucursalModificar.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
+
+        ModificarDireccionLabel.setText("Direccion:");
+
+        ModificarNombreLabel.setText("Nombre:");
+
+        ModificarSalasLabel.setText("Salas:");
+
+        ModificarCarteleraLabel.setText("Cartelera:");
+
+        ModificarSalas.setText("Modificar");
+
+        ModificarCartelera.setText("Modificar");
+
+        ActualizarInfoSucursal.setIcon(new javax.swing.ImageIcon("C:\\Users\\Bernardo\\Desktop\\PROGRAMACION\\GitHub\\CineUnimetProject\\reload-icon.png")); // NOI18N
+        ActualizarInfoSucursal.setText("Actualizar");
+
+        javax.swing.GroupLayout SucursalModificarLayout = new javax.swing.GroupLayout(SucursalModificar);
+        SucursalModificar.setLayout(SucursalModificarLayout);
+        SucursalModificarLayout.setHorizontalGroup(
+            SucursalModificarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(SucursalModificarLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(SucursalModificarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(ModificarDireccionLabel)
+                    .addComponent(ModificarNombreLabel)
+                    .addComponent(ModificarDireccion)
+                    .addComponent(ModificarNombreSucursal, javax.swing.GroupLayout.DEFAULT_SIZE, 225, Short.MAX_VALUE))
+                .addGap(31, 31, 31)
+                .addGroup(SucursalModificarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(SucursalModificarLayout.createSequentialGroup()
+                        .addComponent(ModificarSalasLabel)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(ModificarSalas))
+                    .addGroup(SucursalModificarLayout.createSequentialGroup()
+                        .addComponent(ModificarCarteleraLabel)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 24, Short.MAX_VALUE)
+                        .addGroup(SucursalModificarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(ActualizarInfoSucursal, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(ModificarCartelera, javax.swing.GroupLayout.Alignment.TRAILING))))
+                .addGap(33, 33, 33))
+        );
+        SucursalModificarLayout.setVerticalGroup(
+            SucursalModificarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(SucursalModificarLayout.createSequentialGroup()
+                .addGap(25, 25, 25)
+                .addComponent(ModificarDireccionLabel)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(SucursalModificarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(ModificarDireccion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(ModificarSalasLabel)
+                    .addComponent(ModificarSalas))
+                .addGap(9, 9, 9)
+                .addComponent(ModificarNombreLabel)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(SucursalModificarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(ModificarNombreSucursal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(ModificarCarteleraLabel)
+                    .addComponent(ModificarCartelera))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 41, Short.MAX_VALUE)
+                .addComponent(ActualizarInfoSucursal)
+                .addContainerGap())
+        );
+
+        javax.swing.GroupLayout EditarSucursalFrameLayout = new javax.swing.GroupLayout(EditarSucursalFrame.getContentPane());
+        EditarSucursalFrame.getContentPane().setLayout(EditarSucursalFrameLayout);
+        EditarSucursalFrameLayout.setHorizontalGroup(
+            EditarSucursalFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(EditarSucursalFrameLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(EditarSucursalFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(SucursalModificar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(EditarSucursalFrameLayout.createSequentialGroup()
+                        .addGroup(EditarSucursalFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(SucursalModificarLabel)
+                            .addComponent(NombreSucursalModificar, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
+        );
+        EditarSucursalFrameLayout.setVerticalGroup(
+            EditarSucursalFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(EditarSucursalFrameLayout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addComponent(SucursalModificarLabel)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(NombreSucursalModificar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(SucursalModificar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        EditarSalasFrame.setPreferredSize(new java.awt.Dimension(495, 300));
+
+        SeleccionarSalaLable.setText("Sala");
+
+        SeleccionarSala.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
+        ModificarSala.setText("Seleccionar");
+
+        InfoSalasPanel.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
+
+        MostrarInfoSalas.setBackground(new java.awt.Color(240, 240, 240));
+        MostrarInfoSalas.setColumns(20);
+        MostrarInfoSalas.setRows(5);
+        jScrollPane4.setViewportView(MostrarInfoSalas);
+
+        javax.swing.GroupLayout InfoSalasPanelLayout = new javax.swing.GroupLayout(InfoSalasPanel);
+        InfoSalasPanel.setLayout(InfoSalasPanelLayout);
+        InfoSalasPanelLayout.setHorizontalGroup(
+            InfoSalasPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jScrollPane4, javax.swing.GroupLayout.DEFAULT_SIZE, 259, Short.MAX_VALUE)
+        );
+        InfoSalasPanelLayout.setVerticalGroup(
+            InfoSalasPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jScrollPane4, javax.swing.GroupLayout.DEFAULT_SIZE, 107, Short.MAX_VALUE)
+        );
+
+        ModificarSalasPanel.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
+
+        ModificarFormatoLabel.setText("Seleccione Formato:");
+
+        ModificarFormatoComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
+        CapacidadModificarLabel.setText("Capacidad:");
+
+        ActualizarInfoSalas.setIcon(new javax.swing.ImageIcon("C:\\Users\\Bernardo\\Desktop\\PROGRAMACION\\GitHub\\CineUnimetProject\\reload-icon.png")); // NOI18N
+        ActualizarInfoSalas.setText("Actualizar");
+
+        javax.swing.GroupLayout ModificarSalasPanelLayout = new javax.swing.GroupLayout(ModificarSalasPanel);
+        ModificarSalasPanel.setLayout(ModificarSalasPanelLayout);
+        ModificarSalasPanelLayout.setHorizontalGroup(
+            ModificarSalasPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(ModificarSalasPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(ModificarSalasPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(ModificarFormatoComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(ModificarFormatoLabel))
+                .addGap(18, 18, 18)
+                .addGroup(ModificarSalasPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(CapacidadModificarLabel)
+                    .addComponent(ModificarCapacidad, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ModificarSalasPanelLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(ActualizarInfoSalas)
+                .addContainerGap())
+        );
+        ModificarSalasPanelLayout.setVerticalGroup(
+            ModificarSalasPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(ModificarSalasPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(ModificarSalasPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(ModificarFormatoLabel)
+                    .addComponent(CapacidadModificarLabel))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(ModificarSalasPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(ModificarFormatoComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(ModificarCapacidad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 51, Short.MAX_VALUE)
+                .addComponent(ActualizarInfoSalas)
+                .addContainerGap())
+        );
+
+        javax.swing.GroupLayout EditarSalasFrameLayout = new javax.swing.GroupLayout(EditarSalasFrame.getContentPane());
+        EditarSalasFrame.getContentPane().setLayout(EditarSalasFrameLayout);
+        EditarSalasFrameLayout.setHorizontalGroup(
+            EditarSalasFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(EditarSalasFrameLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(EditarSalasFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(ModificarSalasPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(EditarSalasFrameLayout.createSequentialGroup()
+                        .addGroup(EditarSalasFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(SeleccionarSalaLable)
+                            .addGroup(EditarSalasFrameLayout.createSequentialGroup()
+                                .addComponent(SeleccionarSala, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(ModificarSala)))
+                        .addGap(27, 27, 27)
+                        .addComponent(InfoSalasPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                .addContainerGap())
+        );
+        EditarSalasFrameLayout.setVerticalGroup(
+            EditarSalasFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(EditarSalasFrameLayout.createSequentialGroup()
+                .addGap(31, 31, 31)
+                .addGroup(EditarSalasFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(InfoSalasPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(EditarSalasFrameLayout.createSequentialGroup()
+                        .addComponent(SeleccionarSalaLable)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(EditarSalasFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(SeleccionarSala, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(ModificarSala))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(ModificarSalasPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+
+        EditarCarteleraFrame.setPreferredSize(new java.awt.Dimension(495, 300));
+
+        EliminarPeliculaLabel.setText("Eliminar Pelicula:");
+
+        SeleccionarPeliculaEliminar.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
+        EliminarPelicula.setText("Eliminar");
+
+        AgregarPeliculaLabel.setText("Agregar Pelicula:");
+
+        AgregarPelicula.setText("Agregar");
+
+        CarteleraPanel.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
+
+        MostrarCartelera.setBackground(new java.awt.Color(240, 240, 240));
+        MostrarCartelera.setColumns(20);
+        MostrarCartelera.setRows(5);
+        jScrollPane5.setViewportView(MostrarCartelera);
+
+        javax.swing.GroupLayout CarteleraPanelLayout = new javax.swing.GroupLayout(CarteleraPanel);
+        CarteleraPanel.setLayout(CarteleraPanelLayout);
+        CarteleraPanelLayout.setHorizontalGroup(
+            CarteleraPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jScrollPane5, javax.swing.GroupLayout.DEFAULT_SIZE, 259, Short.MAX_VALUE)
+        );
+        CarteleraPanelLayout.setVerticalGroup(
+            CarteleraPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jScrollPane5, javax.swing.GroupLayout.DEFAULT_SIZE, 133, Short.MAX_VALUE)
+        );
+
+        CarteleraLabel.setText("Cartelera:");
+
+        ModificarInfoCartelera.setIcon(new javax.swing.ImageIcon("C:\\Users\\Bernardo\\Desktop\\PROGRAMACION\\GitHub\\CineUnimetProject\\reload-icon.png")); // NOI18N
+        ModificarInfoCartelera.setText("Actualizar");
+
+        javax.swing.GroupLayout EditarCarteleraFrameLayout = new javax.swing.GroupLayout(EditarCarteleraFrame.getContentPane());
+        EditarCarteleraFrame.getContentPane().setLayout(EditarCarteleraFrameLayout);
+        EditarCarteleraFrameLayout.setHorizontalGroup(
+            EditarCarteleraFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(EditarCarteleraFrameLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(EditarCarteleraFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(EditarCarteleraFrameLayout.createSequentialGroup()
+                        .addGroup(EditarCarteleraFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(AgregarPeliculaLabel)
+                            .addGroup(EditarCarteleraFrameLayout.createSequentialGroup()
+                                .addGroup(EditarCarteleraFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addComponent(IntroducirPelicula, javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(SeleccionarPeliculaEliminar, javax.swing.GroupLayout.Alignment.LEADING, 0, 125, Short.MAX_VALUE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(EditarCarteleraFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(EliminarPelicula)
+                                    .addComponent(AgregarPelicula)))
+                            .addComponent(EliminarPeliculaLabel))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(EditarCarteleraFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(EditarCarteleraFrameLayout.createSequentialGroup()
+                                .addComponent(CarteleraLabel)
+                                .addGap(0, 0, Short.MAX_VALUE))
+                            .addComponent(CarteleraPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, EditarCarteleraFrameLayout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(ModificarInfoCartelera)))
+                .addContainerGap())
+        );
+        EditarCarteleraFrameLayout.setVerticalGroup(
+            EditarCarteleraFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(EditarCarteleraFrameLayout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addGroup(EditarCarteleraFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(EliminarPeliculaLabel)
+                    .addComponent(CarteleraLabel))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(EditarCarteleraFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(EditarCarteleraFrameLayout.createSequentialGroup()
+                        .addGroup(EditarCarteleraFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(SeleccionarPeliculaEliminar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(EliminarPelicula))
+                        .addGap(34, 34, 34)
+                        .addComponent(AgregarPeliculaLabel)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(EditarCarteleraFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(IntroducirPelicula, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(AgregarPelicula)))
+                    .addComponent(CarteleraPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 52, Short.MAX_VALUE)
+                .addComponent(ModificarInfoCartelera)
+                .addContainerGap())
+        );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -157,7 +667,23 @@ public class InterfazCineUnimet extends javax.swing.JFrame {
 
         DireccionSucursalLabel.setText("Direccion:");
 
-        jTextField1.setBackground(new java.awt.Color(204, 204, 204));
+        DireccionSucursal.setBackground(new java.awt.Color(204, 204, 204));
+
+        CarteleraSucursalLabel.setText("Cartelera:");
+
+        CarteleraSucursal.setBackground(new java.awt.Color(204, 204, 204));
+        CarteleraSucursal.setColumns(20);
+        CarteleraSucursal.setRows(5);
+        jScrollPane3.setViewportView(CarteleraSucursal);
+
+        SalasSucursalLabel.setText("Salas:");
+
+        SalasSucursal.setBackground(new java.awt.Color(204, 204, 204));
+        SalasSucursal.setText("#");
+
+        EditarPeliculas.setText("Editar Peliculas");
+
+        EditarSalas.setText("Editar Salas");
 
         javax.swing.GroupLayout InformacionSucursalPanelLayout = new javax.swing.GroupLayout(InformacionSucursalPanel);
         InformacionSucursalPanel.setLayout(InformacionSucursalPanelLayout);
@@ -166,10 +692,21 @@ public class InterfazCineUnimet extends javax.swing.JFrame {
             .addGroup(InformacionSucursalPanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(InformacionSucursalPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(DireccionSucursal)
+                    .addComponent(jScrollPane3)
                     .addGroup(InformacionSucursalPanelLayout.createSequentialGroup()
-                        .addComponent(DireccionSucursalLabel)
+                        .addGroup(InformacionSucursalPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(DireccionSucursalLabel)
+                            .addComponent(CarteleraSucursalLabel)
+                            .addComponent(SalasSucursalLabel))
                         .addGap(0, 0, Short.MAX_VALUE))
-                    .addComponent(jTextField1))
+                    .addGroup(InformacionSucursalPanelLayout.createSequentialGroup()
+                        .addComponent(SalasSucursal, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(EditarPeliculas))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, InformacionSucursalPanelLayout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(EditarSalas)))
                 .addContainerGap())
         );
         InformacionSucursalPanelLayout.setVerticalGroup(
@@ -178,8 +715,20 @@ public class InterfazCineUnimet extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(DireccionSucursalLabel)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(264, Short.MAX_VALUE))
+                .addComponent(DireccionSucursal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(CarteleraSucursalLabel)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(SalasSucursalLabel)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(InformacionSucursalPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(SalasSucursal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(EditarPeliculas))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(EditarSalas)
+                .addContainerGap(47, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout SucursalesTabLayout = new javax.swing.GroupLayout(SucursalesTab);
@@ -220,7 +769,7 @@ public class InterfazCineUnimet extends javax.swing.JFrame {
                             .addComponent(SucursalesOpciones, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(SeleccionarSucursal)))
                     .addComponent(InformacionSucursalPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(44, Short.MAX_VALUE))
+                .addContainerGap(41, Short.MAX_VALUE))
         );
 
         Tabs.addTab("Sucursales", SucursalesTab);
@@ -279,26 +828,92 @@ public class InterfazCineUnimet extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton ActualizarInfo;
+    private javax.swing.JButton ActualizarInfoSalas;
+    private javax.swing.JButton ActualizarInfoSucursal;
     private javax.swing.JButton AgregarPais;
+    private javax.swing.JButton AgregarPelicula;
+    private javax.swing.JLabel AgregarPeliculaLabel;
+    private javax.swing.JLabel AñoLabel;
+    private javax.swing.JLabel CapacidadModificarLabel;
+    private javax.swing.JLabel CarteleraLabel;
+    private javax.swing.JPanel CarteleraPanel;
+    private javax.swing.JTextArea CarteleraSucursal;
+    private javax.swing.JLabel CarteleraSucursalLabel;
+    private javax.swing.JTextField DireccionSucursal;
     private javax.swing.JLabel DireccionSucursalLabel;
+    private javax.swing.JLabel DirectorLabel;
+    private javax.swing.JFrame EditarCarteleraFrame;
+    private javax.swing.JButton EditarPeliculas;
+    private javax.swing.JFrame EditarPeliculasFrame;
+    private javax.swing.JButton EditarSalas;
+    private javax.swing.JFrame EditarSalasFrame;
+    private javax.swing.JFrame EditarSucursalFrame;
+    private javax.swing.JButton EliminarPelicula;
+    private javax.swing.JLabel EliminarPeliculaLabel;
     private javax.swing.JTextField EscribirPais;
+    private javax.swing.JLabel FormatoLabel;
+    private javax.swing.JPanel InfoSalasPanel;
     private javax.swing.JLabel InfoSucursalLabel;
     private javax.swing.JPanel InformacionSucursalPanel;
+    private javax.swing.JTextField IntroducirPelicula;
     private javax.swing.JList ListaPais100;
     private javax.swing.JList ListaPais200;
     private javax.swing.JLabel ListaPaisesLabel;
     private javax.swing.JPanel ListaPaisesPanel;
+    private javax.swing.JTextField ModificarAno;
+    private javax.swing.JTextField ModificarCapacidad;
+    private javax.swing.JButton ModificarCartelera;
+    private javax.swing.JLabel ModificarCarteleraLabel;
+    private javax.swing.JTextField ModificarDireccion;
+    private javax.swing.JLabel ModificarDireccionLabel;
+    private javax.swing.JTextField ModificarDirector;
+    private javax.swing.JTextField ModificarFormato;
+    private javax.swing.JComboBox ModificarFormatoComboBox;
+    private javax.swing.JLabel ModificarFormatoLabel;
+    private javax.swing.JButton ModificarInfoCartelera;
+    private javax.swing.JTextField ModificarNombre;
+    private javax.swing.JLabel ModificarNombreLabel;
+    private javax.swing.JTextField ModificarNombreSucursal;
+    private javax.swing.JPanel ModificarPeliculaPanel;
+    private javax.swing.JButton ModificarSala;
+    private javax.swing.JButton ModificarSalas;
+    private javax.swing.JLabel ModificarSalasLabel;
+    private javax.swing.JPanel ModificarSalasPanel;
+    private javax.swing.JTextArea MostrarCartelera;
+    private javax.swing.JTextArea MostrarInfoSalas;
+    private javax.swing.JLabel NombrePeliculaLabel;
+    private javax.swing.JTextField NombreSucursalModificar;
+    private javax.swing.JButton PaisCreadoAceptar;
+    private javax.swing.JLabel PaisCreadoLabel;
+    private javax.swing.JDialog PaisCreadoWarning;
     private javax.swing.JLabel PaisLabel;
     private javax.swing.JTextField PaisSeleccionadoField;
     private javax.swing.JLabel PaisSeleccionadoLabel;
     private javax.swing.JPanel PaisesTab;
+    private javax.swing.JTextField PeliculaSeleccionada;
+    private javax.swing.JLabel PeliculaSeleccionadaLabel;
+    private javax.swing.JComboBox PeliculasComboBox;
+    private javax.swing.JTextField SalasSucursal;
+    private javax.swing.JLabel SalasSucursalLabel;
     private javax.swing.JButton SeleccionarPais;
+    private javax.swing.JButton SeleccionarPelicula;
+    private javax.swing.JComboBox SeleccionarPeliculaEliminar;
+    private javax.swing.JComboBox SeleccionarSala;
+    private javax.swing.JLabel SeleccionarSalaLable;
     private javax.swing.JButton SeleccionarSucursal;
+    private javax.swing.JLabel SeleccionePeliculaLabel;
+    private javax.swing.JPanel SucursalModificar;
+    private javax.swing.JLabel SucursalModificarLabel;
     private javax.swing.JComboBox SucursalesOpciones;
     private javax.swing.JPanel SucursalesTab;
     private javax.swing.JTabbedPane Tabs;
+    private javax.swing.JLabel WarningIcon;
+    private javax.swing.JButton jButton1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JTextField jTextField1;
+    private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JScrollPane jScrollPane4;
+    private javax.swing.JScrollPane jScrollPane5;
     // End of variables declaration//GEN-END:variables
 }
