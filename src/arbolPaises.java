@@ -158,7 +158,7 @@ public class arbolPaises {
     }
     
     
-    public void NuevoPais(){
+    public void NuevoPais(String nombre){
         
         NodoPais aux = new NodoPais();
         NodoPais ra = raiz;
@@ -176,15 +176,15 @@ public class arbolPaises {
             aux.setPosicion(num);
         }
         
-        System.out.println("Indique el nombre del pais");
-        String nom;
+      /* System.out.println("Indique el nombre del pais");
+        String nom=nombre;
         do{
           existe=false;
           nom=sc.next();
           CompararNom(ra, nom);
-        }while(existe!=false);
+        }while(existe!=false);*/
         
-        aux.setNombrePais(nom.toUpperCase());
+        aux.setNombrePais(nombre.toUpperCase());
         Insertar(ra , aux);
     }
     
