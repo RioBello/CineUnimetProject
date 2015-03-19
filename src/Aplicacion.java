@@ -9,10 +9,10 @@ public class Aplicacion {
        for(int i=0; i<1;i++)
        sucur.CrearSala();
        
-       for(int i=0; i<3;i++)
+       for(int i=0; i<1;i++)
        sucur.CrearPelicula();
       
-       sucur.getPelis().mostrar();
+       sucur.getSalas().modificar();
        
        
        sucur.CrearColaBoletos();
