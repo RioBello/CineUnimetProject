@@ -109,7 +109,7 @@ public class NDSalas {
         String resp;   
         do{
             System.out.println("Indique lo que desea modificar: ");
-            System.out.println("1 Formato\n2 Capacidad");
+            System.out.println("1 Formato\n2 Capacidad\n3 Elminar Pelicula");
             System.out.print("-->");
             switch(sc.nextInt()){
                 case 1:
@@ -122,6 +122,12 @@ public class NDSalas {
                     capacidad=sc.nextInt();
                     mostrar();
                     break;
+                case 3:
+                    NCPelicula nueva = new NCPelicula();
+                    pelicula=nueva;
+                    mostrar();
+                    break;
+                    
             }
             
             System.out.println("Desea realizar otra modificacion? si/no");
