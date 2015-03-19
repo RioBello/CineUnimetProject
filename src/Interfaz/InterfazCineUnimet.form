@@ -12,7 +12,7 @@
                   <Component id="WarningIcon" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Component id="PaisCreadoLabel" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="50" max="32767" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
               </Group>
               <Group type="102" alignment="1" attributes="0">
                   <EmptySpace max="32767" attributes="0"/>
@@ -26,15 +26,15 @@
               <Group type="102" attributes="0">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
-                          <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
-                          <Component id="WarningIcon" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
                           <Component id="PaisCreadoLabel" min="-2" max="-2" attributes="0"/>
                       </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+                          <Component id="WarningIcon" min="-2" max="-2" attributes="0"/>
+                      </Group>
                   </Group>
-                  <EmptySpace pref="10" max="32767" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
                   <Component id="PaisCreadoAceptar" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
               </Group>
@@ -45,7 +45,7 @@
         <Component class="javax.swing.JLabel" name="WarningIcon">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\Bernardo\Desktop\PROGRAMACION\GitHub\CineUnimetProject\warning-icon.png"/>
+              <Image iconType="3" name="/Interfaz/warning-icon.png"/>
             </Property>
           </Properties>
         </Component>
@@ -245,7 +245,7 @@
             <Component class="javax.swing.JButton" name="ActualizarInfo">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\Bernardo\Desktop\PROGRAMACION\GitHub\CineUnimetProject\reload-icon.png"/>
+                  <Image iconType="3" name="/Interfaz/reload-icon.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Actualizar"/>
               </Properties>
@@ -416,7 +416,7 @@
             <Component class="javax.swing.JButton" name="ActualizarInfoSucursal">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\Bernardo\Desktop\PROGRAMACION\GitHub\CineUnimetProject\reload-icon.png"/>
+                  <Image iconType="3" name="/Interfaz/reload-icon.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Actualizar"/>
               </Properties>
@@ -623,7 +623,7 @@
             <Component class="javax.swing.JButton" name="ActualizarInfoSalas">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\Bernardo\Desktop\PROGRAMACION\GitHub\CineUnimetProject\reload-icon.png"/>
+                  <Image iconType="3" name="/Interfaz/reload-icon.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Actualizar"/>
               </Properties>
@@ -704,7 +704,7 @@
                       </Group>
                       <Component id="CarteleraPanel" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="52" max="32767" attributes="0"/>
+                  <EmptySpace pref="87" max="32767" attributes="0"/>
                   <Component id="ModificarInfoCartelera" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
@@ -796,7 +796,7 @@
         <Component class="javax.swing.JButton" name="ModificarInfoCartelera">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\Bernardo\Desktop\PROGRAMACION\GitHub\CineUnimetProject\reload-icon.png"/>
+              <Image iconType="3" name="/Interfaz/reload-icon.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Actualizar"/>
           </Properties>

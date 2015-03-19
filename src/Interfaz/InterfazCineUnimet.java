@@ -117,7 +117,7 @@ public class InterfazCineUnimet extends javax.swing.JFrame {
         EditarPeliculas = new javax.swing.JButton();
         EditarSalas = new javax.swing.JButton();
 
-        WarningIcon.setIcon(new javax.swing.ImageIcon("C:\\Users\\Bernardo\\Desktop\\PROGRAMACION\\GitHub\\CineUnimetProject\\warning-icon.png")); // NOI18N
+        WarningIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/warning-icon.png"))); // NOI18N
 
         PaisCreadoLabel.setText("El pais ya ha sido creado. Favor ingresar uno distinto");
 
@@ -132,7 +132,7 @@ public class InterfazCineUnimet extends javax.swing.JFrame {
                 .addComponent(WarningIcon)
                 .addGap(18, 18, 18)
                 .addComponent(PaisCreadoLabel)
-                .addContainerGap(50, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PaisCreadoWarningLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(PaisCreadoAceptar)
@@ -143,12 +143,12 @@ public class InterfazCineUnimet extends javax.swing.JFrame {
             .addGroup(PaisCreadoWarningLayout.createSequentialGroup()
                 .addGroup(PaisCreadoWarningLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(PaisCreadoWarningLayout.createSequentialGroup()
-                        .addGap(33, 33, 33)
-                        .addComponent(WarningIcon))
-                    .addGroup(PaisCreadoWarningLayout.createSequentialGroup()
                         .addGap(50, 50, 50)
-                        .addComponent(PaisCreadoLabel)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 10, Short.MAX_VALUE)
+                        .addComponent(PaisCreadoLabel))
+                    .addGroup(PaisCreadoWarningLayout.createSequentialGroup()
+                        .addGap(33, 33, 33)
+                        .addComponent(WarningIcon)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(PaisCreadoAceptar)
                 .addGap(19, 19, 19))
         );
@@ -177,7 +177,7 @@ public class InterfazCineUnimet extends javax.swing.JFrame {
 
         FormatoLabel.setText("Formato:");
 
-        ActualizarInfo.setIcon(new javax.swing.ImageIcon("C:\\Users\\Bernardo\\Desktop\\PROGRAMACION\\GitHub\\CineUnimetProject\\reload-icon.png")); // NOI18N
+        ActualizarInfo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/reload-icon.png"))); // NOI18N
         ActualizarInfo.setText("Actualizar");
 
         javax.swing.GroupLayout ModificarPeliculaPanelLayout = new javax.swing.GroupLayout(ModificarPeliculaPanel);
@@ -286,7 +286,7 @@ public class InterfazCineUnimet extends javax.swing.JFrame {
 
         ModificarCartelera.setText("Modificar");
 
-        ActualizarInfoSucursal.setIcon(new javax.swing.ImageIcon("C:\\Users\\Bernardo\\Desktop\\PROGRAMACION\\GitHub\\CineUnimetProject\\reload-icon.png")); // NOI18N
+        ActualizarInfoSucursal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/reload-icon.png"))); // NOI18N
         ActualizarInfoSucursal.setText("Actualizar");
 
         javax.swing.GroupLayout SucursalModificarLayout = new javax.swing.GroupLayout(SucursalModificar);
@@ -397,7 +397,7 @@ public class InterfazCineUnimet extends javax.swing.JFrame {
 
         CapacidadModificarLabel.setText("Capacidad:");
 
-        ActualizarInfoSalas.setIcon(new javax.swing.ImageIcon("C:\\Users\\Bernardo\\Desktop\\PROGRAMACION\\GitHub\\CineUnimetProject\\reload-icon.png")); // NOI18N
+        ActualizarInfoSalas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/reload-icon.png"))); // NOI18N
         ActualizarInfoSalas.setText("Actualizar");
 
         javax.swing.GroupLayout ModificarSalasPanelLayout = new javax.swing.GroupLayout(ModificarSalasPanel);
@@ -503,7 +503,7 @@ public class InterfazCineUnimet extends javax.swing.JFrame {
 
         CarteleraLabel.setText("Cartelera:");
 
-        ModificarInfoCartelera.setIcon(new javax.swing.ImageIcon("C:\\Users\\Bernardo\\Desktop\\PROGRAMACION\\GitHub\\CineUnimetProject\\reload-icon.png")); // NOI18N
+        ModificarInfoCartelera.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/reload-icon.png"))); // NOI18N
         ModificarInfoCartelera.setText("Actualizar");
 
         javax.swing.GroupLayout EditarCarteleraFrameLayout = new javax.swing.GroupLayout(EditarCarteleraFrame.getContentPane());
@@ -556,7 +556,7 @@ public class InterfazCineUnimet extends javax.swing.JFrame {
                             .addComponent(IntroducirPelicula, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(AgregarPelicula)))
                     .addComponent(CarteleraPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 52, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 87, Short.MAX_VALUE)
                 .addComponent(ModificarInfoCartelera)
                 .addContainerGap())
         );
