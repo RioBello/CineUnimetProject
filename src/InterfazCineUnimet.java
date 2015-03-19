@@ -569,18 +569,8 @@ public class InterfazCineUnimet extends javax.swing.JFrame {
 
         ListaPaisesPanel.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
 
-        ListaPais100.setModel(new javax.swing.AbstractListModel() {
-            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
-            public int getSize() { return strings.length; }
-            public Object getElementAt(int i) { return strings[i]; }
-        });
         jScrollPane1.setViewportView(ListaPais100);
 
-        ListaPais200.setModel(new javax.swing.AbstractListModel() {
-            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
-            public int getSize() { return strings.length; }
-            public Object getElementAt(int i) { return strings[i]; }
-        });
         jScrollPane2.setViewportView(ListaPais200);
 
         javax.swing.GroupLayout ListaPaisesPanelLayout = new javax.swing.GroupLayout(ListaPaisesPanel);
