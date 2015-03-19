@@ -68,6 +68,22 @@ public class NSucursales {
         contSalas++;
         salas.InsertarSala(sala);
     }        
+    
+    public void CrearPelicula(){
+        NCPelicula nuevo = new NCPelicula();
+        System.out.println("Ingrese el Titulo: ");
+        nuevo.setTitulo(sc.nextLine().toUpperCase());
+        System.out.println("Ingrese el director: "); 
+        nuevo.setDirector(sc.nextLine());
+        System.out.println("Ingrese el ano del filme: ");
+        nuevo.setAno(sc.nextLine());
+        System.out.println("Ingrese el formato del filme");
+        nuevo.setFormato(sc.nextLine().toUpperCase());
+        
+        
+        InsertarPeliculaSala(nuevo);
+        pelis.insertarPeli(nuevo);
+    }
    
     
     
@@ -152,10 +168,23 @@ public class NSucursales {
             NDSalas rec = salas.getCabeza();
             
             while(rec!=null){
-                if(rec.isDisponible() && rec.getFormato().equals(nuevo.getFormato())){
+                if(rec.getFormato().equals(nuevo.getFormato())){
+                    
+                    if(rec.isDisponible()){
+                    nuevo.setEnCartelera(true);
                     rec.setPelicula(nuevo);
-                }else{
-                    System.out.println("La Sala: "+rec.getNumSala()+"NO SE PUEDE");
+                    rec.setDisponible(false);
+                    }else{
+                        System.out.println("Desea cambiar la pelicula: "+rec.getPelicula().getTitulo());
+                        String resp  =sc.next().toUpperCase();
+                        if(resp=="SI"){
+                            nuevo.setEnCartelera(true);
+                            rec.setPelicula(nuevo);
+                            
+                        }
+                    }
+                
+                    
                 }
                 rec=rec.getProx();
             }
@@ -165,4 +194,6 @@ public class NSucursales {
         }
         salas.mostrar();
     }
+    
+    
 }

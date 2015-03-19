@@ -9,22 +9,21 @@ public class Aplicacion {
        for(int i=0; i<1;i++)
        sucur.CrearSala();
        
-       for(int i=0; i<1;i++){
-       NCPelicula nuevo = new NCPelicula();
-       sucur.InsertarPeliculaSala(nuevo.CrearPelicula());
-           
-       }
+       for(int i=0; i<3;i++)
+       sucur.CrearPelicula();
+      
+       sucur.getPelis().mostrar();
+       
        
        sucur.CrearColaBoletos();
+       
         System.out.println("--------------------------------");
         
-      for(int j=0; j<3; j++)
+      for(int j=0; j<4; j++)
        sucur.AsignarBoleto();
        
-       
-       
       
-        
+       
     }
     
     

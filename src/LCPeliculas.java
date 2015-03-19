@@ -60,18 +60,6 @@ public class LCPeliculas {
     }
     
     
-    public void CrearPelicula(){
-        NCPelicula nuevo = new NCPelicula();
-        System.out.println("Ingrese el Titulo: ");
-        nuevo.setTitulo(sc.nextLine().toUpperCase());
-        System.out.println("Ingrese el director: "); 
-        nuevo.setDirector(sc.nextLine());
-        System.out.println("Ingrese el ano del filme: ");
-        nuevo.setAno(sc.nextLine());
-        System.out.println("Ingrese el formato del filme");
-        nuevo.setFormato(sc.nextLine().toUpperCase());
-        insertarPeli(nuevo);
-    }
     
     public NCPelicula BuscarPeli(){
         NCPelicula aux = cabeza;

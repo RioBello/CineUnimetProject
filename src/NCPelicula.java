@@ -113,7 +113,7 @@ public class NCPelicula {
     
     
     }
-    public NCPelicula CrearPelicula(){
+    public void CrearPelicula(){
         NCPelicula nuevo = new NCPelicula();
         System.out.println("Ingrese el Titulo: ");
         nuevo.setTitulo(sc.nextLine().toUpperCase());
@@ -123,6 +123,6 @@ public class NCPelicula {
         nuevo.setAno(sc.nextLine());
         System.out.println("Ingrese el formato del filme");
         nuevo.setFormato(sc.nextLine().toUpperCase());
-       return nuevo;
+      // return nuevo;
     }
 }
