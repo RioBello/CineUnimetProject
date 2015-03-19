@@ -62,9 +62,8 @@ public class InterfazCineUnimet extends javax.swing.JFrame {
         }
     }
     
-    public NodoPais CrearPais(){
-        paises.NuevoPais(EscribirPais.getText());
-        
+    public void CrearPais(){
+        paises.NuevoPais(EscribirPais.getText());       
         
     }
     /**
