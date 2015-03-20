@@ -28,6 +28,7 @@ public class InterfazCineUnimet extends javax.swing.JFrame {
         initComponents();
        
        manejador = new ArchivoObjetos();
+<<<<<<< HEAD
     }
     
     public void InicializarArbol(){
@@ -62,6 +63,42 @@ public class InterfazCineUnimet extends javax.swing.JFrame {
         }
     }
     
+=======
+    }
+    
+    public void InicializarArbol(){
+        try{
+            paises = (arbolPaises)manejador.ObtenerArchivo();
+            llenarListaPaises100(paises.getRaiz());
+            llenarListaPaises200(paises.getRaiz());
+            
+        }catch(Exception ex){
+            System.out.println("Error Leyendo"+ex.getMessage());
+            paises=new arbolPaises();
+        }
+    }
+    
+    public void llenarListaPaises100(NodoPais raiz){
+        if(!paises.vacio()&&raiz.getPosicion()<=100){
+            llenarListaPaises100(raiz.getIzq());
+            DefaultListModel model1 = new DefaultListModel();
+            model1.addElement(raiz);
+            ListaPais100.setModel(model1);
+            llenarListaPaises100(raiz.getDer());   
+        }
+    }
+    
+    public void llenarListaPaises200(NodoPais raiz){
+        if(!paises.vacio()&&raiz.getPosicion()<=200){
+            llenarListaPaises200(raiz.getIzq());
+            DefaultListModel model1 = new DefaultListModel();
+            model1.addElement(raiz);
+            ListaPais100.setModel(model1);
+            llenarListaPaises200(raiz.getDer());   
+        }
+    }
+    
+>>>>>>> origin/master
     public void CrearPais(){
         paises.NuevoPais(EscribirPais.getText());       
         
