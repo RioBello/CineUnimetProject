@@ -1,4 +1,7 @@
 
+import javax.swing.DefaultListModel;
+
+
 
 
 /*
@@ -17,13 +20,52 @@ public class InterfazCineUnimet extends javax.swing.JFrame {
     /**
      * Creates new form InterfazCineUnimet
      */
+    
+    public ArchivoObjetos manejador;
+    private arbolPaises paises;
+    
     public InterfazCineUnimet() {
         initComponents();
        
-       ArchivoObjetos manejador = new ArchivoObjetos();
+       manejador = new ArchivoObjetos();
     }
     
+    public void InicializarArbol(){
+        try{
+            paises = (arbolPaises)manejador.ObtenerArchivo();
+            llenarListaPaises100(paises.getRaiz());
+            llenarListaPaises200(paises.getRaiz());
+            
+        }catch(Exception ex){
+            System.out.println("Error Leyendo"+ex.getMessage());
+            paises=new arbolPaises();
+        }
+    }
     
+    public void llenarListaPaises100(NodoPais raiz){
+        if(!paises.vacio()&&raiz.getPosicion()<=100){
+            llenarListaPaises100(raiz.getIzq());
+            DefaultListModel model1 = new DefaultListModel();
+            model1.addElement(raiz);
+            ListaPais100.setModel(model1);
+            llenarListaPaises100(raiz.getDer());   
+        }
+    }
+    
+    public void llenarListaPaises200(NodoPais raiz){
+        if(!paises.vacio()&&raiz.getPosicion()<=200){
+            llenarListaPaises200(raiz.getIzq());
+            DefaultListModel model1 = new DefaultListModel();
+            model1.addElement(raiz);
+            ListaPais100.setModel(model1);
+            llenarListaPaises200(raiz.getDer());   
+        }
+    }
+    
+    public void CrearPais(){
+        paises.NuevoPais(EscribirPais.getText());       
+        
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -564,6 +606,11 @@ public class InterfazCineUnimet extends javax.swing.JFrame {
         AgregarPais.setText("Agregar");
 
         EscribirPais.setText("Pais");
+        EscribirPais.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                EscribirPaisMouseClicked(evt);
+            }
+        });
 
         ListaPaisesLabel.setText("Lista de Paises:");
 
@@ -777,6 +824,10 @@ public class InterfazCineUnimet extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void EscribirPaisMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EscribirPaisMouseClicked
+        EscribirPais.setText("");
+    }//GEN-LAST:event_EscribirPaisMouseClicked
 
     /**
      * @param args the command line arguments

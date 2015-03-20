@@ -901,6 +901,9 @@
               <Properties>
                 <Property name="text" type="java.lang.String" value="Pais"/>
               </Properties>
+              <Events>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="EscribirPaisMouseClicked"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="ListaPaisesLabel">
               <Properties>
